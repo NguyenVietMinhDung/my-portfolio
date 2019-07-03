@@ -1,0 +1,19 @@
+/*
+* Folder structure of Sass is followed the "7-1 Pattern" (7 folders, 1 file)
+* This file should ONLY contains the imports from "sass" folder
+*/
+
+// abstracts
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/functions';
+@import 'sass/abstracts/mixins';
+
+// base
+@import 'sass/base/typography';
+
+// layout
+@import 'sass/layout/navbar';
+@import 'sass/layout/navbar-item';
+@import 'sass/layout/navbar-items';
+@import 'sass/layout/navbar-brand';
+@import 'sass/layout/container';
