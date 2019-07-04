@@ -1,8 +1,17 @@
 import React from 'react';
-import logoUrl from '../../../../../assets/images/logo.png';
+import PropTypes from 'prop-types';
 
-const NavbarBrand = () => (
-  <img className="brand pointer" src={logoUrl} alt="" />
-);
+const NavbarBrand = (props) => {
+  const { url } = props;
+  return <img className="brand pointer" src={url} alt="" />;
+};
+
+NavbarBrand.propTypes = {
+  url: PropTypes.string,
+};
+
+NavbarBrand.defaultProps = {
+  url: '',
+};
 
 export default NavbarBrand;

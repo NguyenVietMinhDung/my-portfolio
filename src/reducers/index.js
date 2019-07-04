@@ -1,9 +1,13 @@
+import actions from '../actions';
+
+const { actionTypes: { ACTIVATE_NAVIGATION_ITEM } } = actions;
+
 export default (state, action) => {
   switch (action.type) {
-    case 'SET_ACTIVATED_NAVIGATION_ITEM':
+    case ACTIVATE_NAVIGATION_ITEM:
       return {
         ...state,
-        index: action.payload.index,
+        activatedIndex: action.payload.index,
       };
     default:
       return state;

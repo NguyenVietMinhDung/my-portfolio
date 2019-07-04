@@ -1,34 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import setActivatedNavigationItem from '../../../../../actions';
-import store from '../../../../../store';
 
-const onClick = index => store.dispatch(setActivatedNavigationItem(index));
+const getClassName = active => (active ? 'active' : '');
 
-const isActive = index => (store.getState().index === index ? 'active' : '');
-
-const NavbarItem = ({ name, url, index }) => (
-  <div className={`nav-item ${isActive(index)}`}>
-    <a
-      className="nav-item-font"
-      href={url}
-      onClick={() => onClick(index)}
-    >
-      {name}
-    </a>
-  </div>
-);
+const NavbarItem = (props) => {
+  const {
+    index, active, name, url, setActive,
+  } = props;
+  return (
+    <div className={`nav-item ${getClassName(active)}`}>
+      <a
+        className="nav-item-font"
+        href={url}
+        onClick={() => setActive(index)}
+      >
+        {name}
+      </a>
+    </div>
+  );
+};
 
 NavbarItem.propTypes = {
   index: PropTypes.number,
+  active: PropTypes.bool,
   name: PropTypes.string,
   url: PropTypes.string,
+  setActive: PropTypes.func,
 };
 
 NavbarItem.defaultProps = {
   index: 0,
+  active: true,
   name: '',
   url: '#',
+  setActive: null,
 };
 
 export default NavbarItem;

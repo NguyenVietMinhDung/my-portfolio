@@ -1,6 +1,7 @@
-export default index => ({
-  type: 'SET_ACTIVATED_NAVIGATION_ITEM',
-  payload: {
-    index,
-  },
-});
+import * as actionCreators from './actionCreators';
+import * as actionTypes from './actionTypes';
+
+export default {
+  actionCreators,
+  actionTypes,
+};
