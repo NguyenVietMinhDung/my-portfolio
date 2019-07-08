@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['renders correctly 1'] = `
+<div
+  className="container"
+>
+  <Navbar
+    activatedIndex={0}
+    items={
+      Array [
+        Object {
+          "name": "Home",
+          "url": "#",
+        },
+        Object {
+          "name": "About",
+          "url": "#",
+        },
+        Object {
+          "name": "Services",
+          "url": "#",
+        },
+        Object {
+          "name": "Portfolio",
+          "url": "#",
+        },
+        Object {
+          "name": "Blog",
+          "url": "#",
+        },
+        Object {
+          "name": "Contact",
+          "url": "#",
+        },
+      ]
+    }
+    logoUrl="test-file-stub"
+    setActive={null}
+  />
+</div>
+`;

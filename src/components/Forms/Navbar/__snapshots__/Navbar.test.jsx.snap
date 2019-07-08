@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['renders correctly 1'] = `
+<div
+  className="nav"
+>
+  <div
+    className="nav-content"
+  >
+    <NavbarBrand
+      url=""
+    />
+    <NavbarItems
+      activatedIndex={0}
+      items={Array []}
+      setActive={null}
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
-import actions from '../actions';
+import constants from '../constants';
 
-const { actionTypes: { ACTIVATE_NAVIGATION_ITEM } } = actions;
+const { actions: { ACTIVATE_NAVIGATION_ITEM } } = constants;
 
 export default (state, action) => {
   switch (action.type) {
