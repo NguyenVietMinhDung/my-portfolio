@@ -1,17 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarBrandProps } from './type';
 
-const NavbarBrand = (props) => {
+const NavbarBrand = (props: NavbarBrandProps) => {
   const { url } = props;
   return <img className="brand pointer" src={url} alt="" />;
-};
-
-NavbarBrand.propTypes = {
-  url: PropTypes.string,
-};
-
-NavbarBrand.defaultProps = {
-  url: '',
 };
 
 export default NavbarBrand;

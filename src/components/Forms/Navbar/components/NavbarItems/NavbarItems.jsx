@@ -1,10 +1,11 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarItemsProps } from './type';
 import NavbarItem from '../NavbarItem';
 
 const isActive = (index, activatedIndex) => index === activatedIndex;
 
-const NavbarItems = (props) => {
+const NavbarItems = (props: NavbarItemsProps) => {
   const { items, activatedIndex, setActive } = props;
   return (
     <div className="nav-items">
@@ -20,18 +21,6 @@ const NavbarItems = (props) => {
       ))}
     </div>
   );
-};
-
-NavbarItems.propTypes = {
-  items: PropTypes.instanceOf(Array),
-  activatedIndex: PropTypes.number,
-  setActive: PropTypes.func,
-};
-
-NavbarItems.defaultProps = {
-  items: [],
-  activatedIndex: 0,
-  setActive: null,
 };
 
 export default NavbarItems;

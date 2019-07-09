@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "flow": "flow",
     "eslint": "eslint --ext .jsx,.js --fix src/**",
     "test": "jest --coverage",
     "start": "webpack-dev-server --open --hot --config webpack.dev.js",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.14.2",
     "file-loader": "^4.0.0",
+    "flow-bin": "^0.102.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "node-sass": "^4.12.0",
@@ -41,7 +44,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",

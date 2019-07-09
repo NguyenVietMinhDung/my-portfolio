@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarProps } from './type';
 import NavbarBrand from './components/NavbarBrand';
 import NavbarItems from './components/NavbarItems';
 
-const Navbar = (props) => {
+const Navbar = (props: NavbarProps) => {
   const {
     items, logoUrl, activatedIndex, setActive,
   } = props;
@@ -19,20 +19,6 @@ const Navbar = (props) => {
       </div>
     </div>
   );
-};
-
-Navbar.propTypes = {
-  items: PropTypes.instanceOf(Array),
-  logoUrl: PropTypes.string,
-  activatedIndex: PropTypes.number,
-  setActive: PropTypes.func,
-};
-
-Navbar.defaultProps = {
-  items: [],
-  logoUrl: '',
-  activatedIndex: 0,
-  setActive: null,
 };
 
 export default Navbar;

@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarItemProps } from './type';
 
 const getClassName = active => (active ? 'active' : '');
 
-const NavbarItem = (props) => {
+const NavbarItem = (props: NavbarItemProps) => {
   const {
     index, active, name, url, setActive,
   } = props;
@@ -18,22 +18,6 @@ const NavbarItem = (props) => {
       </a>
     </div>
   );
-};
-
-NavbarItem.propTypes = {
-  index: PropTypes.number,
-  active: PropTypes.bool,
-  name: PropTypes.string,
-  url: PropTypes.string,
-  setActive: PropTypes.func,
-};
-
-NavbarItem.defaultProps = {
-  index: 0,
-  active: true,
-  name: '',
-  url: '#',
-  setActive: null,
 };
 
 export default NavbarItem;
