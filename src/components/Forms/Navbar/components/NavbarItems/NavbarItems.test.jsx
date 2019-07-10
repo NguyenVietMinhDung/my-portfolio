@@ -5,10 +5,12 @@ import NavbarItems from './NavbarItems';
 const defaultProps = {
   items: [],
   activatedIndex: 0,
-  setActive: null,
+  setActive: jest.fn(),
 };
 
-it('renders correctly', () => {
-  const component = shallow(<NavbarItems {...defaultProps} />);
-  expect(component).toMatchSnapshot();
+describe('<NavbarItems />', () => {
+  test('renders correctly', () => {
+    const component = shallow(<NavbarItems {...defaultProps} />);
+    expect(component).toMatchSnapshot();
+  });
 });

@@ -6,7 +6,9 @@ const defaultProps = {
   url: '',
 };
 
-it('renders correctly', () => {
-  const component = shallow(<NavbarBrand {...defaultProps} />);
-  expect(component).toMatchSnapshot();
+describe('<NavbarBrand />', () => {
+  test('renders correctly', () => {
+    const component = shallow(<NavbarBrand {...defaultProps} />);
+    expect(component).toMatchSnapshot();
+  });
 });

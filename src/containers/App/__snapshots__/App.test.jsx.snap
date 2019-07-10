@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['renders correctly 1'] = `
+exports[`<App /> renders correctly 1`] = `
 <div
   className="container"
 >
@@ -35,7 +35,7 @@ exports['renders correctly 1'] = `
       ]
     }
     logoUrl="test-file-stub"
-    setActive={null}
+    setActive={[MockFunction]}
   />
 </div>
 `;

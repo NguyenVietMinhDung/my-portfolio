@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['renders correctly 1'] = `
+exports[`<NavbarItem /> renders correctly 1`] = `
 <div
-  className="nav-item active"
+  className="nav-item "
 >
   <a
     className="nav-item-font"
     href="#"
     onClick={[Function]}
-  />
+  >
+    Home
+  </a>
 </div>
 `;

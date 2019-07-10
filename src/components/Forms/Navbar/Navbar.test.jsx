@@ -6,10 +6,12 @@ const defaultProps = {
   items: [],
   logoUrl: '',
   activatedIndex: 0,
-  setActive: null,
+  setActive: jest.fn(),
 };
 
-it('renders correctly', () => {
-  const component = shallow(<Navbar {...defaultProps} />);
-  expect(component).toMatchSnapshot();
+describe('<Navbar />', () => {
+  test('renders correctly', () => {
+    const component = shallow(<Navbar {...defaultProps} />);
+    expect(component).toMatchSnapshot();
+  });
 });
