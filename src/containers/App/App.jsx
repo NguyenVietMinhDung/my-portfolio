@@ -1,31 +1,24 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
-import navItems from './App.config';
+import type { AppProps } from './type';
+import items from './initialData';
 import logoUrl from '../../assets/images/logo.png';
+import hamburgerUrl from '../../assets/images/hamburger.png';
 import Navbar from '../../components/Forms/Navbar';
 
-const App = (props) => {
+const App = (props: AppProps) => {
   const { activatedIndex, activateNavigationItem } = props;
   return (
     <div className="container">
       <Navbar
-        items={navItems}
+        items={items}
         logoUrl={logoUrl}
+        hamburgerUrl={hamburgerUrl}
         activatedIndex={activatedIndex}
-        setActive={activateNavigationItem}
+        activateNavigationItem={activateNavigationItem}
       />
     </div>
   );
-};
-
-App.propTypes = {
-  activatedIndex: PropTypes.number,
-  activateNavigationItem: PropTypes.func,
-};
-
-App.defaultProps = {
-  activatedIndex: 0,
-  activateNavigationItem: null,
 };
 
 export default App;

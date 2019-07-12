@@ -1,38 +1,27 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarProps } from './type';
 import NavbarBrand from './components/NavbarBrand';
-import NavbarItems from './components/NavbarItems';
+import NavbarMenu from './components/NavbarMenu';
+import HamburgerButton from './components/HamburgerButton';
 
-const Navbar = (props) => {
+const Navbar = (props: NavbarProps) => {
   const {
-    items, logoUrl, activatedIndex, setActive,
+    items, logoUrl, hamburgerUrl, activatedIndex, activateNavigationItem,
   } = props;
   return (
     <div className="nav">
       <div className="nav-content">
-        <NavbarBrand url={logoUrl} />
-        <NavbarItems
+        <NavbarBrand logoUrl={logoUrl} />
+        <NavbarMenu
           items={items}
           activatedIndex={activatedIndex}
-          setActive={setActive}
+          activateNavigationItem={activateNavigationItem}
         />
+        <HamburgerButton hamburgerUrl={hamburgerUrl} />
       </div>
     </div>
   );
-};
-
-Navbar.propTypes = {
-  items: PropTypes.instanceOf(Array),
-  logoUrl: PropTypes.string,
-  activatedIndex: PropTypes.number,
-  setActive: PropTypes.func,
-};
-
-Navbar.defaultProps = {
-  items: [],
-  logoUrl: '',
-  activatedIndex: 0,
-  setActive: null,
 };
 
 export default Navbar;

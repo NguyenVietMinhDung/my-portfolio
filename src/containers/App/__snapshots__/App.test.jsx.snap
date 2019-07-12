@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<App /> renders correctly 1'] = `
+<div
+  className="container"
+>
+  <Navbar
+    activateNavigationItem={[MockFunction]}
+    activatedIndex={0}
+    hamburgerUrl="test-file-stub"
+    items={
+      Array [
+        Object {
+          "name": "Home",
+          "url": "#",
+        },
+        Object {
+          "name": "About",
+          "url": "#",
+        },
+        Object {
+          "name": "Services",
+          "url": "#",
+        },
+        Object {
+          "name": "Portfolio",
+          "url": "#",
+        },
+        Object {
+          "name": "Blog",
+          "url": "#",
+        },
+        Object {
+          "name": "Contact",
+          "url": "#",
+        },
+      ]
+    }
+    logoUrl="test-file-stub"
+  />
+</div>
+`;

@@ -1,39 +1,26 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
+import type { NavbarItemProps } from './type';
 
-const getClassName = active => (active ? 'active' : '');
+const getClassName = (index, activatedIndex) => (index === activatedIndex ? 'active' : '');
 
-const NavbarItem = (props) => {
+const setActive = (activateNavigationItem, index) => () => activateNavigationItem(index);
+
+const NavbarItem = (props: NavbarItemProps) => {
   const {
-    index, active, name, url, setActive,
+    index, name, url, activateNavigationItem, activatedIndex,
   } = props;
   return (
-    <div className={`nav-item ${getClassName(active)}`}>
+    <li className={`nav-item ${getClassName(index, activatedIndex)}`}>
       <a
         className="nav-item-font"
         href={url}
-        onClick={() => setActive(index)}
+        onClick={setActive(activateNavigationItem, index)}
       >
         {name}
       </a>
-    </div>
+    </li>
   );
-};
-
-NavbarItem.propTypes = {
-  index: PropTypes.number,
-  active: PropTypes.bool,
-  name: PropTypes.string,
-  url: PropTypes.string,
-  setActive: PropTypes.func,
-};
-
-NavbarItem.defaultProps = {
-  index: 0,
-  active: true,
-  name: '',
-  url: '#',
-  setActive: null,
 };
 
 export default NavbarItem;

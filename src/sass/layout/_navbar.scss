@@ -12,6 +12,8 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    min-width: 1000px;
+    width: 1000px;
+    padding: 0 15px;
+    position: relative;
   }
 }
