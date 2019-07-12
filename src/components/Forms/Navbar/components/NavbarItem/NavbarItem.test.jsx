@@ -4,11 +4,11 @@ import { shallow, mount } from 'enzyme';
 import NavbarItem from './NavbarItem';
 
 const defaultProps = {
-  index: 0,
-  active: false,
+  index: 2,
+  activatedIndex: 0,
   name: 'Home',
   url: '#',
-  setActive: jest.fn(),
+  activateNavigationItem: jest.fn(),
 };
 
 describe('<NavbarItem />', () => {
@@ -19,6 +19,7 @@ describe('<NavbarItem />', () => {
   test('activated after clicking', () => {
     const component = mount(<NavbarItem {...defaultProps} />);
     component.find('a').simulate('click');
-    expect(component.props().setActive).toBeCalled();
+    component.setProps({ activatedIndex: 2 });
+    expect(component.props().activateNavigationItem).toBeCalledWith(component.props().index);
   });
 });

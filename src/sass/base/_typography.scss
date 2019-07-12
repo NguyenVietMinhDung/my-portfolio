@@ -9,7 +9,7 @@ body {
 }
 
 // Navigation's font
-.nav-item-font {
+.nav-item-font, .dropdown-item-font {
   text-transform: uppercase;
   color: $light-grey-color;
   font-weight: 500;

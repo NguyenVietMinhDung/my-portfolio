@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<NavbarItems /> renders correctly 1'] = `
+<div
+  className="nav-menu"
+>
+  <ul
+    className="nav-menu-content"
+  >
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={0}
+      key="Home"
+      name="Home"
+      url="#"
+    />
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={1}
+      key="About"
+      name="About"
+      url="#"
+    />
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={2}
+      key="Services"
+      name="Services"
+      url="#"
+    />
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={3}
+      key="Portfolio"
+      name="Portfolio"
+      url="#"
+    />
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={4}
+      key="Blog"
+      name="Blog"
+      url="#"
+    />
+    <NavbarItem
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={5}
+      key="Contact"
+      name="Contact"
+      url="#"
+    />
+  </ul>
+</div>
+`;

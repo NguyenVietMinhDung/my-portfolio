@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> renders correctly 1`] = `
+exports['<Navbar /> renders correctly 1'] = `
 <div
   className="nav"
 >
@@ -8,12 +8,15 @@ exports[`<Navbar /> renders correctly 1`] = `
     className="nav-content"
   >
     <NavbarBrand
-      url=""
+      logoUrl=""
     />
-    <NavbarItems
+    <NavbarMenu
+      activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       items={Array []}
-      setActive={[MockFunction]}
+    />
+    <HamburgerButton
+      hamburgerUrl=""
     />
   </div>
 </div>

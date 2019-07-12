@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+
+.hamburger-btn {
+  display: none;
+  @media (max-width: $layout-breakpoint) {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  &-size {
+    width: 44px;
+    height: 32px;
+  }
+}

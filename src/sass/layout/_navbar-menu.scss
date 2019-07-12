@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+
+.nav-menu {
+  @media (min-width: $layout-breakpoint) {
+    flex: 1;
+
+    &-content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      list-style-type: none;
+    }
+  }
+
+  @media (max-width: $layout-breakpoint) {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    &-content {
+      list-style-type: none;
+      padding: 3px 12px;
+      margin: 0 15px;
+      box-shadow: 0 10px 15px 0 $box-shadow-color;
+    }
+  }
+}

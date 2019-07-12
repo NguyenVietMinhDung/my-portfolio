@@ -1,21 +1,24 @@
+// @flow
 import React from 'react';
 import type { NavbarProps } from './type';
 import NavbarBrand from './components/NavbarBrand';
-import NavbarItems from './components/NavbarItems';
+import NavbarMenu from './components/NavbarMenu';
+import HamburgerButton from './components/HamburgerButton';
 
 const Navbar = (props: NavbarProps) => {
   const {
-    items, logoUrl, activatedIndex, setActive,
+    items, logoUrl, hamburgerUrl, activatedIndex, activateNavigationItem,
   } = props;
   return (
     <div className="nav">
       <div className="nav-content">
-        <NavbarBrand url={logoUrl} />
-        <NavbarItems
+        <NavbarBrand logoUrl={logoUrl} />
+        <NavbarMenu
           items={items}
           activatedIndex={activatedIndex}
-          setActive={setActive}
+          activateNavigationItem={activateNavigationItem}
         />
+        <HamburgerButton hamburgerUrl={hamburgerUrl} />
       </div>
     </div>
   );

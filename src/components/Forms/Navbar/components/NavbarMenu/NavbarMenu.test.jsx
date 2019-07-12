@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NavbarItems from './NavbarItems';
+import items from '../../../../../containers/App/initialData';
+import NavbarItems from './NavbarMenu';
 
 const defaultProps = {
-  items: [],
+  items,
   activatedIndex: 0,
-  setActive: jest.fn(),
+  activateNavigationItem: jest.fn(),
 };
 
 describe('<NavbarItems />', () => {

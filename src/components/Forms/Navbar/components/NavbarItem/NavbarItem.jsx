@@ -1,22 +1,25 @@
+// @flow
 import React from 'react';
 import type { NavbarItemProps } from './type';
 
-const getClassName = active => (active ? 'active' : '');
+const getClassName = (index, activatedIndex) => (index === activatedIndex ? 'active' : '');
+
+const setActive = (activateNavigationItem, index) => () => activateNavigationItem(index);
 
 const NavbarItem = (props: NavbarItemProps) => {
   const {
-    index, active, name, url, setActive,
+    index, name, url, activateNavigationItem, activatedIndex,
   } = props;
   return (
-    <div className={`nav-item ${getClassName(active)}`}>
+    <li className={`nav-item ${getClassName(index, activatedIndex)}`}>
       <a
         className="nav-item-font"
         href={url}
-        onClick={() => setActive(index)}
+        onClick={setActive(activateNavigationItem, index)}
       >
         {name}
       </a>
-    </div>
+    </li>
   );
 };
 

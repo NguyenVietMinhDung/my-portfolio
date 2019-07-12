@@ -1,7 +1,7 @@
 export type NavbarItemProps = {
   index: number,
-  active: boolean,
+  activatedIndex: number,
   name: string,
   url: string,
-  setActive: Function,
+  activateNavigationItem: Function,
 };
