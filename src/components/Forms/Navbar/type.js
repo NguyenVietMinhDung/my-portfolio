@@ -8,5 +8,7 @@ export type NavbarProps = {
   logoUrl: string,
   hamburgerUrl: string,
   activatedIndex: number,
+  isVisible: boolean,
   activateNavigationItem: Function,
+  openNavigationMenu: Function,
 };

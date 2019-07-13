@@ -4,7 +4,7 @@
   @media (min-width: $layout-breakpoint) {
     position: relative;
 
-    &:hover, &.active {
+    &:hover, &.is-active {
       a {
         color: $violet-color;
         &::before {
@@ -32,7 +32,7 @@
   @media (max-width: $layout-breakpoint) {
     margin: 4px 0;
 
-    &.active {
+    &.is-active {
       a {
         color: $violet-color;
       }

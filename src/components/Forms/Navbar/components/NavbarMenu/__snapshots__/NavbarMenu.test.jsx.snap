@@ -5,7 +5,7 @@ exports['<NavbarItems /> renders correctly 1'] = `
   className="nav-menu"
 >
   <ul
-    className="nav-menu-content"
+    className="nav-menu-content is-invisible"
   >
     <NavbarItem
       activateNavigationItem={[MockFunction]}

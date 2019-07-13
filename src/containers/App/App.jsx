@@ -7,15 +7,19 @@ import hamburgerUrl from '../../assets/images/hamburger.png';
 import Navbar from '../../components/Forms/Navbar';
 
 const App = (props: AppProps) => {
-  const { activatedIndex, activateNavigationItem } = props;
+  const {
+    activatedIndex, activateNavigationItem, openNavigationMenu, isVisible,
+  } = props;
   return (
     <div className="container">
       <Navbar
+        isVisible={isVisible}
         items={items}
         logoUrl={logoUrl}
         hamburgerUrl={hamburgerUrl}
         activatedIndex={activatedIndex}
         activateNavigationItem={activateNavigationItem}
+        openNavigationMenu={openNavigationMenu}
       />
     </div>
   );

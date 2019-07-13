@@ -3,8 +3,10 @@ import { shallow } from 'enzyme';
 import App from './App';
 
 const defaultProps = {
+  isVisible: false,
   activatedIndex: 0,
   activateNavigationItem: jest.fn(),
+  openNavigationMenu: jest.fn(),
 };
 
 describe('<App />', () => {

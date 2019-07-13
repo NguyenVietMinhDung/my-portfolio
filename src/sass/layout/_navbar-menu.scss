@@ -1,9 +1,9 @@
 @import '../abstracts/variables';
 
 .nav-menu {
-  @media (min-width: $layout-breakpoint) {
-    flex: 1;
+  flex: 1;
 
+  @media (min-width: $layout-breakpoint) {
     &-content {
       display: flex;
       flex-flow: row wrap;
@@ -21,10 +21,23 @@
     width: 100%;
 
     &-content {
+      display: flex;
+      flex-direction: column;
       list-style-type: none;
-      padding: 3px 12px;
       margin: 0 15px;
+      overflow: hidden;
+      transition: max-height .3s ease-out 0s;
       box-shadow: 0 10px 15px 0 $box-shadow-color;
+
+      &.is-visible {
+        max-height: 200px;
+        padding: 3px 12px;
+      }
+
+      &.is-invisible {
+        max-height: 0;
+        padding: 0 12px;
+      }
     }
   }
 }

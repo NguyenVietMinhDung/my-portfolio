@@ -13,10 +13,39 @@ exports['<Navbar /> renders correctly 1'] = `
     <NavbarMenu
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
-      items={Array []}
+      isVisible={false}
+      items={
+        Array [
+          Object {
+            "name": "Home",
+            "url": "#",
+          },
+          Object {
+            "name": "About",
+            "url": "#",
+          },
+          Object {
+            "name": "Services",
+            "url": "#",
+          },
+          Object {
+            "name": "Portfolio",
+            "url": "#",
+          },
+          Object {
+            "name": "Blog",
+            "url": "#",
+          },
+          Object {
+            "name": "Contact",
+            "url": "#",
+          },
+        ]
+      }
     />
     <HamburgerButton
       hamburgerUrl=""
+      openNavigationMenu={[MockFunction]}
     />
   </div>
 </div>

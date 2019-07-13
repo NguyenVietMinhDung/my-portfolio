@@ -8,6 +8,7 @@ exports['<App /> renders correctly 1'] = `
     activateNavigationItem={[MockFunction]}
     activatedIndex={0}
     hamburgerUrl="test-file-stub"
+    isVisible={false}
     items={
       Array [
         Object {
@@ -37,6 +38,7 @@ exports['<App /> renders correctly 1'] = `
       ]
     }
     logoUrl="test-file-stub"
+    openNavigationMenu={[MockFunction]}
   />
 </div>
 `;

@@ -16,7 +16,7 @@ describe('<NavbarItem />', () => {
     const component = shallow(<NavbarItem {...defaultProps} />);
     expect(component).toMatchSnapshot();
   });
-  test('activated after clicking', () => {
+  test('handle click event', () => {
     const component = mount(<NavbarItem {...defaultProps} />);
     component.find('a').simulate('click');
     component.setProps({ activatedIndex: 2 });
