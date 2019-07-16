@@ -7,7 +7,12 @@ const {
   },
 } = constants;
 
-export default (state, action) => {
+const initialState = {
+  isVisible: false,
+  activatedIndex: 0,
+};
+
+export default (state = initialState, action) => {
   switch (action.type) {
     case ACTIVATE_NAVIGATION_ITEM:
       return {

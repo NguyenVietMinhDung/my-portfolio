@@ -6,7 +6,8 @@ import Navbar from './Navbar';
 const defaultProps = {
   items,
   logoUrl: '',
-  hamburgerUrl: '',
+  hamburgerIconUrl: '',
+  closeIconUrl: '',
   activatedIndex: 0,
   isVisible: false,
   activateNavigationItem: jest.fn(),

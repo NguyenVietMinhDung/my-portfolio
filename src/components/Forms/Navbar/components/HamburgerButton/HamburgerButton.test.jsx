@@ -4,7 +4,9 @@ import { shallow, mount } from 'enzyme';
 import HamburgerButton from './HamburgerButton';
 
 const defaultProps = {
-  hamburgerUrl: '',
+  isVisible: false,
+  closeIconUrl: '',
+  hamburgerIconUrl: '',
   openNavigationMenu: jest.fn(),
 };
 
@@ -14,7 +16,7 @@ describe('<HamburgerButton />', () => {
     expect(component).toMatchSnapshot();
   });
   test('handle click event', () => {
-    const component = mount(<HamburgerButton {...defaultProps} />);
+    const component = mount(<HamburgerButton {...defaultProps} isVisible />);
     component.find('img').simulate('click');
     expect(component.props().openNavigationMenu).toBeCalled();
   });

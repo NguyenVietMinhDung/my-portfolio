@@ -44,7 +44,9 @@ exports['<Navbar /> renders correctly 1'] = `
       }
     />
     <HamburgerButton
-      hamburgerUrl=""
+      closeIconUrl=""
+      hamburgerIconUrl=""
+      isVisible={false}
       openNavigationMenu={[MockFunction]}
     />
   </div>

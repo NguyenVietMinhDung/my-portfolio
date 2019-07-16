@@ -9,7 +9,8 @@ const Navbar = (props: NavbarProps) => {
   const {
     items,
     logoUrl,
-    hamburgerUrl,
+    hamburgerIconUrl,
+    closeIconUrl,
     activatedIndex,
     isVisible,
     activateNavigationItem,
@@ -26,7 +27,9 @@ const Navbar = (props: NavbarProps) => {
           activateNavigationItem={activateNavigationItem}
         />
         <HamburgerButton
-          hamburgerUrl={hamburgerUrl}
+          isVisible={isVisible}
+          closeIconUrl={closeIconUrl}
+          hamburgerIconUrl={hamburgerIconUrl}
           openNavigationMenu={openNavigationMenu}
         />
       </div>

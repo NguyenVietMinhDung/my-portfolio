@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const merger = require('webpack-merge');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merger(common, {
@@ -8,4 +9,10 @@ module.exports = merger(common, {
   devServer: {
     contentBase: './dist',
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+  ],
 });

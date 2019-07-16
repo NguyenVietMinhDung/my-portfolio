@@ -2,13 +2,19 @@
 import React from 'react';
 import { HamburgerButtonProps } from './type';
 
+const getMenuIconUrl = (isVisible, closeIconUrl, hamburgerIconUrl) => (
+  isVisible ? closeIconUrl : hamburgerIconUrl
+);
+
 const HamburgerButton = (props: HamburgerButtonProps) => {
-  const { hamburgerUrl, openNavigationMenu } = props;
+  const {
+    isVisible, closeIconUrl, hamburgerIconUrl, openNavigationMenu,
+  } = props;
   return (
     <div className="hamburger-btn">
       <img
         className="hamburger-btn-size"
-        src={hamburgerUrl}
+        src={getMenuIconUrl(isVisible, closeIconUrl, hamburgerIconUrl)}
         alt=""
         onClick={openNavigationMenu}
       />

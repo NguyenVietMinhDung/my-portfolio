@@ -6,7 +6,8 @@ export type Item = {
 export type NavbarProps = {
   items: Array<Item>,
   logoUrl: string,
-  hamburgerUrl: string,
+  hamburgerIconUrl: string,
+  closeIconUrl: string,
   activatedIndex: number,
   isVisible: boolean,
   activateNavigationItem: Function,
