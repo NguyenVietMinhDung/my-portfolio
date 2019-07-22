@@ -1,8 +1,11 @@
 // @flow
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import classNames from 'classnames';
+import styles from './NavbarItem.scss';
 import type { NavbarItemProps } from './type';
 
-const getStyleClass = (index, activatedIndex) => (index === activatedIndex ? 'is-active' : '');
+const getStyleClass = (index, activatedIndex) => (index === activatedIndex ? styles['is-active'] : '');
 
 const activate = (activateNavigationItem, index) => () => activateNavigationItem(index);
 
@@ -11,9 +14,9 @@ const NavbarItem = (props: NavbarItemProps) => {
     index, name, url, activateNavigationItem, activatedIndex,
   } = props;
   return (
-    <li className={`nav-item ${getStyleClass(index, activatedIndex)}`}>
+    <li className={classNames(styles['nav-item'], getStyleClass(index, activatedIndex))}>
       <a
-        className="nav-item-font"
+        styleName="content"
         href={url}
         onClick={activate(activateNavigationItem, index)}
       >
@@ -23,4 +26,4 @@ const NavbarItem = (props: NavbarItemProps) => {
   );
 };
 
-export default NavbarItem;
+export default CSSModules(NavbarItem, styles);

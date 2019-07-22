@@ -1,16 +1,7 @@
+@import '../abstracts/mixins';
 @import '../abstracts/variables';
 
 // Default font
 body {
-  font-family: $default-font-family;
-  font-size: 16px;
-  font-weight: 400;
-  color: $light-grey-color;
-}
-
-// Navigation's font
-.nav-item-font, .dropdown-item-font {
-  text-transform: uppercase;
-  color: $light-grey-color;
-  font-weight: 500;
+  @include font($default-font-family, inherit, $light-grey-color, 16px, 400);
 }

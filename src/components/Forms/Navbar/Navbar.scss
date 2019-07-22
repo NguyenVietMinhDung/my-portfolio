@@ -1,18 +1,21 @@
-@import '../abstracts/variables';
+@import '../../../sass/abstracts/variables';
 
 .nav {
+  z-index: 2;
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
   padding: 30px 0;
   background-color: $white-color;
   box-shadow: 0 0 30px 0 $box-shadow-color;
 
-  &-content {
+  .content {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    width: 1000px;
+    width: $layout-breakpoint;
     padding: 0 15px;
     position: relative;
   }

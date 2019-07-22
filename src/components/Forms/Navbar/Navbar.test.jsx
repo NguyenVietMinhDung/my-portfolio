@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import items from '../../../containers/App/initialData';
+import { navbarItems } from '../../../containers/App/initialData';
 import Navbar from './Navbar';
 
 const defaultProps = {
-  items,
-  logoUrl: '',
-  hamburgerIconUrl: '',
-  closeIconUrl: '',
+  navbarItems,
+  logoUrl: '../../../assets/images/logo.png',
+  hamburgerIconUrl: '../../../assets/images/hamburger-icon.png',
+  closeIconUrl: '../../../assets/images/close-icon.png',
   activatedIndex: 0,
   isVisible: false,
   activateNavigationItem: jest.fn(),

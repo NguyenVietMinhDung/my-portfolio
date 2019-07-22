@@ -1,0 +1,36 @@
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/mixins';
+
+.about-me {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    .title {
+      @include font(inherit, inherit, $black-color, 45px, 700);
+      padding-bottom: 20px;
+    }
+
+    .greeting {
+      @include font(inherit, inherit, $black-color, 18px, 500);
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: $layout-breakpoint) {
+      padding: 0;
+      width: $layout-breakpoint;
+    }
+
+    @media (max-width: $layout-breakpoint) {
+      padding: 0 15px;
+      width: auto;
+    }
+  }
+}

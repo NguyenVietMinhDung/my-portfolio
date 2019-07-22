@@ -1,14 +1,13 @@
-@import '../abstracts/variables';
+@import '../../../../../sass/abstracts/variables';
 
 .nav-menu {
   flex: 1;
 
   @media (min-width: $layout-breakpoint) {
-    &-content {
+    .content {
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-end;
-      list-style-type: none;
     }
   }
 
@@ -20,14 +19,14 @@
     padding: 0;
     width: 100%;
 
-    &-content {
+    .content {
       display: flex;
       flex-direction: column;
-      list-style-type: none;
       margin: 0 15px;
       overflow: hidden;
       transition: max-height .3s ease-out 0s;
       box-shadow: 0 10px 15px 0 $box-shadow-color;
+      background-color: $white-color;
 
       &.is-visible {
         max-height: 200px;

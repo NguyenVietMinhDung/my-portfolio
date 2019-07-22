@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<SocialNetworkMenu /> renders correctly 1'] = `
+<ul
+  className="social-network-menu"
+>
+  <SocialNetworkItem
+    iconUrl="test-file-stub"
+    key="Facebook"
+    url="https://www.facebook.com/minh.dung.391"
+  />
+  <SocialNetworkItem
+    iconUrl="test-file-stub"
+    key="Instagram"
+    url="https://www.instagram.com/dungvmnguyen"
+  />
+  <SocialNetworkItem
+    iconUrl="test-file-stub"
+    key="LinkedIn"
+    url="https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114"
+  />
+</ul>
+`;

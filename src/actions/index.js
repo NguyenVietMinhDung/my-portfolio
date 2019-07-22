@@ -17,8 +17,3 @@ export const activateNavigationItem = index => ({
 export const openNavigationMenu = () => ({
   type: OPEN_NAVIGATION_MENU,
 });
-
-export default {
-  activateNavigationItem,
-  openNavigationMenu,
-};

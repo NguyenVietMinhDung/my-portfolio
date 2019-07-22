@@ -5,8 +5,16 @@ require('@babel/register')({
     [
       'file-loader',
       {
-        publicPath: '/assets/images',
+        publicPath: 'assets/images',
         outputPath: null,
+      },
+    ],
+    [
+      'css-modules-transform',
+      {
+        extensions: ['.scss'],
+        preprocessCss: 'D:/my-portfolio/src/sass-loader.js',
+        generateScopedName: '[name]__[local]',
       },
     ],
   ],

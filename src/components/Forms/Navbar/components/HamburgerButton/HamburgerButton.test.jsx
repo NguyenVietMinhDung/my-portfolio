@@ -5,8 +5,8 @@ import HamburgerButton from './HamburgerButton';
 
 const defaultProps = {
   isVisible: false,
-  closeIconUrl: '',
-  hamburgerIconUrl: '',
+  closeIconUrl: '../../../assets/images/close-icon.png',
+  hamburgerIconUrl: '../../../assets/images/hamburger-icon.png',
   openNavigationMenu: jest.fn(),
 };
 

@@ -1,16 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<App /> renders correctly 1'] = `
-<div
-  className="container"
->
+exports[`<App /> renders correctly 1`] = `
+<div>
   <Navbar
     activateNavigationItem={[MockFunction]}
     activatedIndex={0}
     closeIconUrl="test-file-stub"
     hamburgerIconUrl="test-file-stub"
     isVisible={false}
-    items={
+    logoUrl="test-file-stub"
+    navbarItems={
       Array [
         Object {
           "name": "Home",
@@ -38,8 +37,48 @@ exports['<App /> renders correctly 1'] = `
         },
       ]
     }
-    logoUrl="test-file-stub"
     openNavigationMenu={[MockFunction]}
+  />
+  <Header
+    avatarUrl="test-file-stub"
+    btnTxt="VIEW MY WORK"
+    description="A Freelance UI Designer & Web Developer"
+    name="Dung Nguyen"
+    socialNetworks={
+      Array [
+        Object {
+          "iconUrl": "test-file-stub",
+          "name": "Facebook",
+          "url": "https://www.facebook.com/minh.dung.391",
+        },
+        Object {
+          "iconUrl": "test-file-stub",
+          "name": "Instagram",
+          "url": "https://www.instagram.com/dungvmnguyen",
+        },
+        Object {
+          "iconUrl": "test-file-stub",
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114",
+        },
+      ]
+    }
+  />
+  <AboutMe
+    greeting="Hi There! I'm Dung Nguyen"
+    summary="I am an ambitious Web
+Application Developer who
+always tries to improve himself
+everyday, a quick learner who
+can absorb new ideas and can
+communicate clearly and
+effectively. Looking for an
+ambitious company which will
+challenge my developer and
+allows me to continue
+to develop my knowledge and
+potential."
+    title="About Me"
   />
 </div>
 `;

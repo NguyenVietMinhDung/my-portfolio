@@ -1,4 +1,5 @@
-@import '../abstracts/variables';
+@import '../../../../../sass/abstracts/variables';
+@import '../../../../../sass/abstracts/mixins';
 
 .nav-item {
   @media (min-width: $layout-breakpoint) {
@@ -37,5 +38,9 @@
         color: $violet-color;
       }
     }
+  }
+
+  .content {
+    @include font(inherit, uppercase, $light-grey-color, inherit, 500);
   }
 }

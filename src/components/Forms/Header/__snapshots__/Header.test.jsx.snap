@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="introduction"
+    >
+      <div
+        className="sub-title"
+      >
+        HELLO, I'M
+      </div>
+      <div
+        className="title"
+      >
+        Dung Nguyen
+      </div>
+      <div
+        className="description"
+      >
+        A Freelance UI Designer & Web Developer
+      </div>
+      <Button
+        handleClickEvent={[Function]}
+        text="VIEW MY WORK"
+      />
+    </div>
+    <div
+      className="avatar"
+    >
+      <img
+        alt=""
+        src="../../../assets/images/avatar.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="social"
+  >
+    <SocialNetworkMenu
+      items={
+        Array [
+          Object {
+            "iconUrl": "test-file-stub",
+            "name": "Facebook",
+            "url": "https://www.facebook.com/minh.dung.391",
+          },
+          Object {
+            "iconUrl": "test-file-stub",
+            "name": "Instagram",
+            "url": "https://www.instagram.com/dungvmnguyen",
+          },
+          Object {
+            "iconUrl": "test-file-stub",
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;

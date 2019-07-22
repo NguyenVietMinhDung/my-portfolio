@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -17,17 +16,6 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            'sass-loader',
-          ],
-        }),
       },
       {
         test: /\.(png|jpe?g)$/,
@@ -49,6 +37,5 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new ExtractTextPlugin('bundle.css'),
   ],
 };
