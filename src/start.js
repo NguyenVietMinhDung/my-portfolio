@@ -1,4 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
+const path = require('path');
+
 require('@babel/register')({
   presets: ['@babel/preset-env'],
   plugins: [
@@ -13,7 +15,7 @@ require('@babel/register')({
       'css-modules-transform',
       {
         extensions: ['.scss'],
-        preprocessCss: 'D:/my-portfolio/src/sass-loader.js',
+        preprocessCss: path.resolve(__dirname, 'sass-loader.js'),
         generateScopedName: '[name]__[local]',
       },
     ],
