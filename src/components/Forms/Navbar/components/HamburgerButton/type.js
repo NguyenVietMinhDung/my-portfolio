@@ -1,3 +1,6 @@
 export type HamburgerButtonProps = {
-  hamburgerUrl: '',
+  closeIconUrl: string,
+  hamburgerIconUrl: string,
+  isVisible: boolean,
+  openNavigationMenu: Function,
 };

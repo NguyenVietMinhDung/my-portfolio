@@ -1,2 +1,2 @@
-/* eslint-disable import/prefer-default-export */
 export const ACTIVATE_NAVIGATION_ITEM = 'ACTIVATE_NAVIGATION_ITEM';
+export const OPEN_NAVIGATION_MENU = 'OPEN_NAVIGATION_MENU';

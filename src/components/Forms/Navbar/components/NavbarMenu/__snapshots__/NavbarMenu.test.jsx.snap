@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<NavbarItems /> renders correctly 1'] = `
+exports[`<NavbarItems /> renders correctly 1`] = `
 <div
   className="nav-menu"
 >
   <ul
-    className="nav-menu-content"
+    className="content is-invisible"
   >
     <NavbarItem
       activateNavigationItem={[MockFunction]}

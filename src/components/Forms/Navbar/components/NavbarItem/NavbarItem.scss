@@ -1,10 +1,11 @@
-@import '../abstracts/variables';
+@import '../../../../../sass/abstracts/variables';
+@import '../../../../../sass/abstracts/mixins';
 
 .nav-item {
   @media (min-width: $layout-breakpoint) {
     position: relative;
 
-    &:hover, &.active {
+    &:hover, &.is-active {
       a {
         color: $violet-color;
         &::before {
@@ -32,10 +33,14 @@
   @media (max-width: $layout-breakpoint) {
     margin: 4px 0;
 
-    &.active {
+    &.is-active {
       a {
         color: $violet-color;
       }
     }
+  }
+
+  .content {
+    @include font(inherit, uppercase, $light-grey-color, inherit, 500);
   }
 }

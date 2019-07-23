@@ -1,14 +1,27 @@
 // @flow
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './HamburgerButton.scss';
 import { HamburgerButtonProps } from './type';
 
+const getMenuIconUrl = (isVisible, closeIconUrl, hamburgerIconUrl) => (
+  isVisible ? closeIconUrl : hamburgerIconUrl
+);
+
 const HamburgerButton = (props: HamburgerButtonProps) => {
-  const { hamburgerUrl } = props;
+  const {
+    isVisible, closeIconUrl, hamburgerIconUrl, openNavigationMenu,
+  } = props;
   return (
-    <div className="hamburger-btn">
-      <img className="hamburger-btn-size" src={hamburgerUrl} alt="" />
+    <div styleName="hamburger-btn">
+      <img
+        styleName="size"
+        src={getMenuIconUrl(isVisible, closeIconUrl, hamburgerIconUrl)}
+        alt=""
+        onClick={openNavigationMenu}
+      />
     </div>
   );
 };
 
-export default HamburgerButton;
+export default CSSModules(HamburgerButton, styles);

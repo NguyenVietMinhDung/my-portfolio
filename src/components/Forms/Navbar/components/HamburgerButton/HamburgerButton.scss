@@ -1,4 +1,4 @@
-@import '../abstracts/variables';
+@import '../../../../../sass/abstracts/variables';
 
 .hamburger-btn {
   display: none;
@@ -9,8 +9,8 @@
     justify-content: flex-end;
   }
 
-  &-size {
-    width: 44px;
-    height: 32px;
+  .size {
+    width: 35px;
+    height: 35px;
   }
 }

@@ -5,7 +5,9 @@ import store from './store';
 import App from './containers/App';
 import './main.scss';
 
-ReactDOM.render(
+// Using ReactDOM.render(...) when running on dev mode
+// Otherwise using ReactDOM.hydrate(...) for SSR
+ReactDOM.hydrate(
   <Provider store={store}>
     <App />
   </Provider>,

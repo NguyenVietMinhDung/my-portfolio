@@ -1,12 +1,15 @@
-export type Item = {
+export type navbarItem = {
   name: string,
   url: string,
 };
 
 export type NavbarProps = {
-  items: Array<Item>,
+  navbarItems: Array<navbarItem>,
   logoUrl: string,
-  hamburgerUrl: string,
+  hamburgerIconUrl: string,
+  closeIconUrl: string,
   activatedIndex: number,
+  isVisible: boolean,
   activateNavigationItem: Function,
+  openNavigationMenu: Function,
 };

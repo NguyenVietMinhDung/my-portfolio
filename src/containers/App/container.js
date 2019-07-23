@@ -1,14 +1,15 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { activateNavigationItem } from '../../actions';
+import { activateNavigationItem, openNavigationMenu } from '../../actions';
 import App from './App';
 
 const mapStateToProps = state => ({
   activatedIndex: state.activatedIndex,
+  isVisible: state.isVisible,
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-  { activateNavigationItem },
+  { activateNavigationItem, openNavigationMenu },
   dispatch,
 );
 

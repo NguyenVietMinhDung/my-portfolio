@@ -1,7 +1,8 @@
-import { Item } from '../../type';
+import { navbarItem } from '../../type';
 
 export type NavbarMenuProps = {
-  items: Array<Item>,
+  items: Array<navbarItem>,
   activatedIndex: number,
-  setActive: Function,
+  isVisible: boolean,
+  activateNavigationItem: Function,
 };

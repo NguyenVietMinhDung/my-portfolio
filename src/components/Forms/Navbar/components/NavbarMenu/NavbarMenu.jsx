@@ -1,13 +1,20 @@
 // @flow
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import classNames from 'classnames';
+import styles from './NavbarMenu.scss';
 import type { NavbarMenuProps } from './type';
 import NavbarItem from '../NavbarItem';
 
+const getStyleClass = isVisible => (isVisible ? styles['is-visible'] : styles['is-invisible']);
+
 const NavbarMenu = (props: NavbarMenuProps) => {
-  const { items, activatedIndex, activateNavigationItem } = props;
+  const {
+    items, activatedIndex, isVisible, activateNavigationItem,
+  } = props;
   return (
-    <div className="nav-menu">
-      <ul className="nav-menu-content">
+    <div styleName="nav-menu">
+      <ul className={classNames(styles.content, getStyleClass(isVisible))}>
         {items.map((item, index) => (
           <NavbarItem
             index={index}
@@ -23,4 +30,4 @@ const NavbarMenu = (props: NavbarMenuProps) => {
   );
 };
 
-export default NavbarMenu;
+export default CSSModules(NavbarMenu, styles);

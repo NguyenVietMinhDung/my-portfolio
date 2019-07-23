@@ -1,0 +1,42 @@
+@import '../../../../../sass/abstracts/variables';
+
+.nav-menu {
+  flex: 1;
+
+  @media (min-width: $layout-breakpoint) {
+    .content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: $layout-breakpoint) {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      overflow: hidden;
+      transition: max-height .3s ease-out 0s;
+      box-shadow: 0 10px 15px 0 $box-shadow-color;
+      background-color: $white-color;
+
+      &.is-visible {
+        max-height: 200px;
+        padding: 3px 12px;
+      }
+
+      &.is-invisible {
+        max-height: 0;
+        padding: 0 12px;
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
-*.scss
 *.html
+*.pug
+*.scss
 *.png

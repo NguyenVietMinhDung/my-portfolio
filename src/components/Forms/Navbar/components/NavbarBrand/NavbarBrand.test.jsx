@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import NavbarBrand from './NavbarBrand';
 
 const defaultProps = {
-  url: '',
+  logoUrl: '../../../assets/images/logo.png',
 };
 
 describe('<NavbarBrand />', () => {
