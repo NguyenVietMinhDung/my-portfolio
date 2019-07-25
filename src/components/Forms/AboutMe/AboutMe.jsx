@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './AboutMe.scss';
 import type { AboutMeProps } from './type';
@@ -17,4 +17,4 @@ const AboutMe = (props: AboutMeProps) => {
   );
 };
 
-export default CSSModules(AboutMe, styles);
+export default memo(CSSModules(AboutMe, styles));

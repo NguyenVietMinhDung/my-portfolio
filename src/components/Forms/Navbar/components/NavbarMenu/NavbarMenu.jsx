@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
 import styles from './NavbarMenu.scss';
@@ -30,4 +30,4 @@ const NavbarMenu = (props: NavbarMenuProps) => {
   );
 };
 
-export default CSSModules(NavbarMenu, styles);
+export default memo(CSSModules(NavbarMenu, styles));

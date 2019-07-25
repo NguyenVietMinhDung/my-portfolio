@@ -1,13 +1,15 @@
 import 'jsdom-global/register';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import closeIconUrl from '../../../../../assets/images/close-icon.png';
+import hamburgerIconUrl from '../../../../../assets/images/hamburger-icon.png';
 import HamburgerButton from './HamburgerButton';
 
 const defaultProps = {
-  isVisible: false,
-  closeIconUrl: '../../../assets/images/close-icon.png',
-  hamburgerIconUrl: '../../../assets/images/hamburger-icon.png',
+  closeIconUrl,
+  hamburgerIconUrl,
   openNavigationMenu: jest.fn(),
+  isVisible: false,
 };
 
 describe('<HamburgerButton />', () => {

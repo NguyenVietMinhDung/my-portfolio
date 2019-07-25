@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Header.scss';
 import type { HeaderProps } from './type';
@@ -33,4 +33,4 @@ const Header = (props: HeaderProps) => {
   );
 };
 
-export default CSSModules(Header, styles);
+export default memo(CSSModules(Header, styles));

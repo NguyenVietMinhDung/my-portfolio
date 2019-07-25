@@ -25,7 +25,7 @@ exports[`<Header /> renders correctly 1`] = `
       >
         A Freelance UI Designer & Web Developer
       </div>
-      <Button
+      <Memo(Button)
         handleClickEvent={[Function]}
         text="VIEW MY WORK"
       />
@@ -35,14 +35,14 @@ exports[`<Header /> renders correctly 1`] = `
     >
       <img
         alt=""
-        src="../../../assets/images/avatar.jpg"
+        src="test-file-stub"
       />
     </div>
   </div>
   <div
     className="social"
   >
-    <SocialNetworkMenu
+    <Memo(SocialNetworkMenu)
       items={
         Array [
           Object {

@@ -3,12 +3,8 @@
 exports[`<Button /> renders correctly 1`] = `
 <div
   className="btn"
+  onClick={[MockFunction]}
 >
-  <div
-    className="content"
-    onClick={[MockFunction]}
-  >
-    VIEW MY WORK
-  </div>
+  VIEW MY WORK
 </div>
 `;

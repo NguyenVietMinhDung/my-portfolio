@@ -1,16 +1,13 @@
 @import '../../../../../sass/abstracts/variables';
 
 .hamburger-btn {
-  display: none;
+  width: 35px;
+  height: 35px;
+
+  @media (min-width: $layout-breakpoint) {
+    display: none;
+  }
   @media (max-width: $layout-breakpoint) {
     display: flex;
-    flex: 1;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-  }
-
-  .size {
-    width: 35px;
-    height: 35px;
   }
 }

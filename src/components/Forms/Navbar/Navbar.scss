@@ -15,6 +15,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between;
     width: $layout-breakpoint;
     padding: 0 15px;
     position: relative;

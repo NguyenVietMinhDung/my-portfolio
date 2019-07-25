@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './SocialNetworkMenu.scss';
 import type { SocialNetworkMenuProps } from './type';
@@ -20,4 +20,4 @@ const SocialNetworkMenu = (props: SocialNetworkMenuProps) => {
   );
 };
 
-export default CSSModules(SocialNetworkMenu, styles);
+export default memo(CSSModules(SocialNetworkMenu, styles));

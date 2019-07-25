@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import type { AppProps } from './type';
 import { navbarItems, socialNetworks } from './initialData';
 import logoUrl from '../../assets/images/logo.png';
@@ -28,36 +28,28 @@ const {
   },
 } = constants;
 
-const App = (props: AppProps) => {
-  const {
-    activatedIndex, activateNavigationItem, openNavigationMenu, isVisible,
-  } = props;
-  return (
-    <div>
-      <Navbar
-        isVisible={isVisible}
-        navbarItems={navbarItems}
-        logoUrl={logoUrl}
-        hamburgerIconUrl={hamburgerIconUrl}
-        closeIconUrl={closeIconUrl}
-        activatedIndex={activatedIndex}
-        activateNavigationItem={activateNavigationItem}
-        openNavigationMenu={openNavigationMenu}
-      />
-      <Header
-        name={HEADER_NAME}
-        description={HEADER_DESCRIPTION}
-        btnTxt={HEADER_BUTTON_TEXT}
-        socialNetworks={socialNetworks}
-        avatarUrl={avatarUrl}
-      />
-      <AboutMe
-        title={ABOUT_ME_TITLE}
-        greeting={ABOUT_ME_GREETING}
-        summary={ABOUT_ME_SUMMARY}
-      />
-    </div>
-  );
-};
+const App = (props: AppProps) => (
+  <>
+    <Navbar
+      navbarItems={navbarItems}
+      logoUrl={logoUrl}
+      hamburgerIconUrl={hamburgerIconUrl}
+      closeIconUrl={closeIconUrl}
+      {...props}
+    />
+    <Header
+      name={HEADER_NAME}
+      description={HEADER_DESCRIPTION}
+      btnTxt={HEADER_BUTTON_TEXT}
+      socialNetworks={socialNetworks}
+      avatarUrl={avatarUrl}
+    />
+    <AboutMe
+      title={ABOUT_ME_TITLE}
+      greeting={ABOUT_ME_GREETING}
+      summary={ABOUT_ME_SUMMARY}
+    />
+  </>
+);
 
-export default App;
+export default memo(App);

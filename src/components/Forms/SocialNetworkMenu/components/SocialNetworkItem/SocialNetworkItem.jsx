@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './SocialNetworkItem.scss';
 import type { SocialNetworkItemProps } from './type';
@@ -15,4 +15,4 @@ const SocialNetworkItem = (props: SocialNetworkItemProps) => {
   );
 };
 
-export default CSSModules(SocialNetworkItem, styles);
+export default memo(CSSModules(SocialNetworkItem, styles));

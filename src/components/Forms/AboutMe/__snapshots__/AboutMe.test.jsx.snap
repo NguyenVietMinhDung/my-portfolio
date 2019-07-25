@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutMe /> renders correctly 1`] = `
+<div
+  className="about-me"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="title"
+    >
+      About Me
+    </div>
+    <div
+      className="greeting"
+    >
+      Hi There! I'm Dung Nguyen
+    </div>
+    <div>
+      I am an ambitious Web
+Application Developer who
+always tries to improve himself
+everyday, a quick learner who
+can absorb new ideas and can
+communicate clearly and
+effectively. Looking for an
+ambitious company which will
+challenge my developer and
+allows me to continue
+to develop my knowledge and
+potential.
+    </div>
+  </div>
+</div>
+`;

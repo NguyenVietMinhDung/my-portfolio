@@ -3,7 +3,7 @@
 exports[`<NavbarBrand /> renders correctly 1`] = `
 <img
   alt=""
-  className="brand"
-  src="../../../assets/images/logo.png"
+  className="nav-brand"
+  src="test-file-stub"
 />
 `;

@@ -5,5 +5,5 @@ export type SocialNetworkItem = {
 };
 
 export type SocialNetworkMenuProps = {
-  socialNetworks: Array<SocialNetworkItem>,
+  items: Array<SocialNetworkItem>,
 };
