@@ -1,7 +1,4 @@
-export type navbarItem = {
-  name: string,
-  url: string,
-};
+import type { navbarItem } from './components/NavbarMenu/type';
 
 export type NavbarProps = {
   navbarItems: Array<navbarItem>,

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NavbarItem /> renders correctly 1`] = `
+exports['<NavbarItem /> renders correctly 1'] = `
 <li
   className="nav-item"
 >

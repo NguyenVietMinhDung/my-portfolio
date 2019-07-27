@@ -46,3 +46,41 @@ export const socialNetworks = [
     iconUrl: linkedInIconUrl,
   },
 ];
+
+export const skills = [
+  {
+    itemId: 'skill-1',
+    name: 'JavaScript, HTML, CSS',
+    value: 100,
+  },
+  {
+    itemId: 'skill-2',
+    name: 'ReactJS, Redux',
+    value: 80,
+  },
+  {
+    itemId: 'skill-3',
+    name: 'SCSS, Styled-Component',
+    value: 80,
+  },
+  {
+    itemId: 'skill-4',
+    name: 'Jest, Enzyme',
+    value: 70,
+  },
+  {
+    itemId: 'skill-5',
+    name: 'Webpack',
+    value: 80,
+  },
+  {
+    itemId: 'skill-6',
+    name: 'Node.js',
+    value: 50,
+  },
+  {
+    itemId: 'skill-7',
+    name: 'Git',
+    value: 80,
+  },
+];

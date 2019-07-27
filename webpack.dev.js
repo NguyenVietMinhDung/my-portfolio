@@ -30,6 +30,14 @@ module.exports = merger(common, {
           'sass-loader',
         ],
       },
+      {
+        test: /\.css$/,
+        exclude: /src/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
     ],
   },
   plugins: [

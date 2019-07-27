@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NavbarItems /> renders correctly 1`] = `
+exports['<NavbarItems /> renders correctly 1'] = `
 <div
   className="nav-menu"
 >
   <ul
     className="content is-invisible"
   >
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={0}
@@ -15,7 +15,7 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       name="Home"
       url="#"
     />
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={1}
@@ -23,7 +23,7 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       name="About"
       url="#"
     />
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={2}
@@ -31,7 +31,7 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       name="Services"
       url="#"
     />
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={3}
@@ -39,7 +39,7 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       name="Portfolio"
       url="#"
     />
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={4}
@@ -47,7 +47,7 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       name="Blog"
       url="#"
     />
-    <NavbarItem
+    <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={5}

@@ -1,14 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HamburgerButton /> renders correctly 1`] = `
-<div
+exports['<HamburgerButton /> renders correctly 1'] = `
+<img
+  alt=""
   className="hamburger-btn"
->
-  <img
-    alt=""
-    className="size"
-    onClick={[MockFunction]}
-    src="../../../assets/images/hamburger-icon.png"
-  />
-</div>
+  onClick={[MockFunction]}
+  src="test-file-stub"
+/>
 `;

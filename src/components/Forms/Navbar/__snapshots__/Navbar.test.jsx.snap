@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> renders correctly 1`] = `
+exports['<Navbar /> renders correctly 1'] = `
 <div
   className="nav"
 >
   <div
     className="content"
   >
-    <NavbarBrand
-      logoUrl="../../../assets/images/logo.png"
+    <Memo(NavbarBrand)
+      logoUrl="test-file-stub"
     />
-    <NavbarMenu
+    <Memo(NavbarMenu)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       isVisible={false}
@@ -43,9 +43,9 @@ exports[`<Navbar /> renders correctly 1`] = `
         ]
       }
     />
-    <HamburgerButton
-      closeIconUrl="../../../assets/images/close-icon.png"
-      hamburgerIconUrl="../../../assets/images/hamburger-icon.png"
+    <Memo(HamburgerButton)
+      closeIconUrl="test-file-stub"
+      hamburgerIconUrl="test-file-stub"
       isVisible={false}
       openNavigationMenu={[MockFunction]}
     />

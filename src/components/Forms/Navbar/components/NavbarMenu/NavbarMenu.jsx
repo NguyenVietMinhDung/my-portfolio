@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
 import styles from './NavbarMenu.scss';
@@ -17,12 +17,11 @@ const NavbarMenu = (props: NavbarMenuProps) => {
       <ul className={classNames(styles.content, getStyleClass(isVisible))}>
         {items.map((item, index) => (
           <NavbarItem
+            key={item.name}
             index={index}
             activatedIndex={activatedIndex}
-            key={item.name}
-            name={item.name}
-            url={item.url}
             activateNavigationItem={activateNavigationItem}
+            {...item}
           />
         ))}
       </ul>
@@ -30,4 +29,4 @@ const NavbarMenu = (props: NavbarMenuProps) => {
   );
 };
 
-export default CSSModules(NavbarMenu, styles);
+export default memo(CSSModules(NavbarMenu, styles));

@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './HamburgerButton.scss';
 import { HamburgerButtonProps } from './type';
@@ -13,15 +13,13 @@ const HamburgerButton = (props: HamburgerButtonProps) => {
     isVisible, closeIconUrl, hamburgerIconUrl, openNavigationMenu,
   } = props;
   return (
-    <div styleName="hamburger-btn">
-      <img
-        styleName="size"
-        src={getMenuIconUrl(isVisible, closeIconUrl, hamburgerIconUrl)}
-        alt=""
-        onClick={openNavigationMenu}
-      />
-    </div>
+    <img
+      styleName="hamburger-btn"
+      src={getMenuIconUrl(isVisible, closeIconUrl, hamburgerIconUrl)}
+      alt=""
+      onClick={openNavigationMenu}
+    />
   );
 };
 
-export default CSSModules(HamburgerButton, styles);
+export default memo(CSSModules(HamburgerButton, styles));

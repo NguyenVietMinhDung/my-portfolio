@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<AboutMe /> renders correctly 1'] = `
+<div
+  className="about-me"
+  data-aos="fade-right"
+  data-aos-duration="2000"
+>
+  <div
+    className="title"
+  />
+  <div
+    className="content"
+  >
+    <div
+      className="introduction"
+    >
+      <div
+        className="greeting"
+      />
+      <div />
+    </div>
+    <div
+      className="skills"
+    >
+      <Memo(ProgressBars) />
+    </div>
+  </div>
+</div>
+`;

@@ -28,6 +28,16 @@ module.exports = merger(common, {
           ],
         }),
       },
+      {
+        test: /\.css$/,
+        exclude: /src/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+          ],
+        }),
+      },
     ],
   },
   plugins: [

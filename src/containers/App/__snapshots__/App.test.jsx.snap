@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> renders correctly 1`] = `
-<div>
-  <Navbar
+exports['<App /> renders correctly 1'] = `
+<Fragment>
+  <Memo(Navbar)
     activateNavigationItem={[MockFunction]}
     activatedIndex={0}
     closeIconUrl="test-file-stub"
@@ -39,7 +39,7 @@ exports[`<App /> renders correctly 1`] = `
     }
     openNavigationMenu={[MockFunction]}
   />
-  <Header
+  <Memo(Header)
     avatarUrl="test-file-stub"
     btnTxt="VIEW MY WORK"
     description="A Freelance UI Designer & Web Developer"
@@ -64,8 +64,47 @@ exports[`<App /> renders correctly 1`] = `
       ]
     }
   />
-  <AboutMe
+  <Memo(AboutMe)
     greeting="Hi There! I'm Dung Nguyen"
+    skills={
+      Array [
+        Object {
+          "itemId": "skill-1",
+          "name": "JavaScript, HTML, CSS",
+          "value": 100,
+        },
+        Object {
+          "itemId": "skill-2",
+          "name": "ReactJS, Redux",
+          "value": 80,
+        },
+        Object {
+          "itemId": "skill-3",
+          "name": "SCSS, Styled-Component",
+          "value": 80,
+        },
+        Object {
+          "itemId": "skill-4",
+          "name": "Jest, Enzyme",
+          "value": 70,
+        },
+        Object {
+          "itemId": "skill-5",
+          "name": "Webpack",
+          "value": 80,
+        },
+        Object {
+          "itemId": "skill-6",
+          "name": "Node.js",
+          "value": 50,
+        },
+        Object {
+          "itemId": "skill-7",
+          "name": "Git",
+          "value": 80,
+        },
+      ]
+    }
     summary="I am an ambitious Web
 Application Developer who
 always tries to improve himself
@@ -80,5 +119,5 @@ to develop my knowledge and
 potential."
     title="About Me"
   />
-</div>
+</Fragment>
 `;
