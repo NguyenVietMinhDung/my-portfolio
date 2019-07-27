@@ -1,5 +1,5 @@
-@import '../../../sass/abstracts/variables';
-@import '../../../sass/abstracts/mixins';
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
 
 .about-me {
   display: flex;
@@ -8,19 +8,33 @@
   width: 100%;
   padding: 100px 0;
 
+  .title {
+    @include font(inherit, inherit, $black-color, 45px, 700);
+    padding-bottom: 50px;
+  }
+
   .content {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-    .title {
-      @include font(inherit, inherit, $black-color, 45px, 700);
-      padding-bottom: 20px;
+    .introduction {
+      flex: 0.45;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+
+      .greeting {
+        @include font(inherit, inherit, $black-color, 18px, 500);
+        padding-bottom: 15px;
+      }
     }
 
-    .greeting {
-      @include font(inherit, inherit, $black-color, 18px, 500);
-      padding-bottom: 15px;
+    .skills {
+      flex: 0.45;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-end;
     }
 
     @media (min-width: $layout-breakpoint) {

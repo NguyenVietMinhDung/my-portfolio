@@ -1,12 +1,13 @@
-@import '../../../sass/abstracts/variables';
-@import '../../../sass/abstracts/mixins';
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
 
 .header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   width: 100%;
-  background-color: $header-background-color;
+  background-size: cover;
+  background: url($header-bg-img) no-repeat center;
 
   .content {
     display: flex;
@@ -89,7 +90,7 @@
     }
   }
 
-  .social {
+  .social-networks {
     position: relative;
     display: flex;
     flex-flow: row wrap;

@@ -4,6 +4,6 @@ export type SocialNetworkItem = {
   iconUrl: string,
 };
 
-export type SocialNetworkMenuProps = {
+export type SocialNetworksProps = {
   items: Array<SocialNetworkItem>,
 };

@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 import styles from './Header.scss';
 import type { HeaderProps } from './type';
 import Button from '../../Commons/Button';
-import SocialNetworkMenu from '../SocialNetworkMenu';
+import SocialNetworks from '../../Commons/SocialNetworks';
 
 const Header = (props: HeaderProps) => {
   const {
@@ -26,8 +26,8 @@ const Header = (props: HeaderProps) => {
           <img src={avatarUrl} alt="" />
         </div>
       </div>
-      <div styleName="social">
-        <SocialNetworkMenu items={socialNetworks} />
+      <div styleName="social-networks">
+        <SocialNetworks items={socialNetworks} />
       </div>
     </div>
   );

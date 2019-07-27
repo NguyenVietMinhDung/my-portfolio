@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { socialNetworks } from '../../../containers/App/initialData';
-import SocialNetworkMenu from './SocialNetworkMenu';
+import SocialNetworks from './SocialNetworks';
 
 const defaultProps = {
   items: socialNetworks,
 };
 
-describe('<SocialNetworkMenu />', () => {
+describe('<SocialNetworks />', () => {
   test('renders correctly', () => {
-    const component = shallow(<SocialNetworkMenu {...defaultProps} />);
+    const component = shallow(<SocialNetworks {...defaultProps} />);
     expect(component).toMatchSnapshot();
   });
 });

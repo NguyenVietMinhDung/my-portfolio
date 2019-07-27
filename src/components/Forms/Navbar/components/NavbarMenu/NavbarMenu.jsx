@@ -17,12 +17,11 @@ const NavbarMenu = (props: NavbarMenuProps) => {
       <ul className={classNames(styles.content, getStyleClass(isVisible))}>
         {items.map((item, index) => (
           <NavbarItem
+            key={item.name}
             index={index}
             activatedIndex={activatedIndex}
-            key={item.name}
-            name={item.name}
-            url={item.url}
             activateNavigationItem={activateNavigationItem}
+            {...item}
           />
         ))}
       </ul>

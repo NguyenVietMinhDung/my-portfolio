@@ -1,4 +1,4 @@
-import type { SocialNetworkItem } from '../SocialNetworkMenu/type';
+import type { SocialNetworkItem } from '../../Commons/SocialNetworks/type';
 
 export type HeaderProps = {
   socialNetworks: Array<SocialNetworkItem>,
