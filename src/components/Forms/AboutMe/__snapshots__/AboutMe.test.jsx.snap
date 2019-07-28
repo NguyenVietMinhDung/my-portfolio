@@ -19,6 +19,90 @@ exports['<AboutMe /> renders correctly 1'] = `
         className="greeting"
       />
       <div />
+      <ul
+        className="basic-info"
+      >
+        <li
+          className="info"
+          key="Date of birth"
+        >
+          <i
+            className="lni-calendar info-icon"
+          />
+          <div
+            className="info-text"
+          >
+            <span>
+              Date of birth
+              :
+            </span>
+            <span>
+               
+              16 January 1995
+            </span>
+          </div>
+        </li>
+        <li
+          className="info"
+          key="Email"
+        >
+          <i
+            className="lni-envelope info-icon"
+          />
+          <div
+            className="info-text"
+          >
+            <span>
+              Email
+              :
+            </span>
+            <span>
+               
+              ngvietminhdung@gmail.com
+            </span>
+          </div>
+        </li>
+        <li
+          className="info"
+          key="Phone"
+        >
+          <i
+            className="lni-phone-handset info-icon"
+          />
+          <div
+            className="info-text"
+          >
+            <span>
+              Phone
+              :
+            </span>
+            <span>
+               
+              (076) 401-2912
+            </span>
+          </div>
+        </li>
+        <li
+          className="info"
+          key="Location"
+        >
+          <i
+            className="lni-map-marker info-icon"
+          />
+          <div
+            className="info-text"
+          >
+            <span>
+              Location
+              :
+            </span>
+            <span>
+               
+              Tan Binh District, HCM City
+            </span>
+          </div>
+        </li>
+      </ul>
     </div>
     <div
       className="skills"
