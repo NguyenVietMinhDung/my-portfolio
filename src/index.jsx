@@ -8,7 +8,7 @@ import App from './containers/App';
 
 // Using ReactDOM.render(...) when running on dev mode
 // Otherwise using ReactDOM.hydrate(...) for SSR
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store}>
     <App />
   </Provider>,
