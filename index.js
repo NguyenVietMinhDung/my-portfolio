@@ -15,11 +15,11 @@ require('@babel/register')({
       'css-modules-transform',
       {
         extensions: ['.scss'],
-        preprocessCss: path.resolve(__dirname, 'sass-loader.js'),
+        preprocessCss: path.resolve(__dirname, 'src/sass-loader.js'),
         generateScopedName: '[name]__[local]',
       },
     ],
   ],
 });
 
-module.exports = require('./server.jsx');
+module.exports = require('./src/server.jsx');
