@@ -29,6 +29,29 @@ export const navbarItems = [
   },
 ];
 
+export const basicInfo = [
+  {
+    iconClassName: 'lni-calendar',
+    name: 'Date of birth',
+    value: '16 January 1995',
+  },
+  {
+    iconClassName: 'lni-envelope',
+    name: 'Email',
+    value: 'ngvietminhdung@gmail.com',
+  },
+  {
+    iconClassName: 'lni-phone-handset',
+    name: 'Phone',
+    value: '(076) 401-2912',
+  },
+  {
+    iconClassName: 'lni-map-marker',
+    name: 'Location',
+    value: 'Tan Binh District, HCM City',
+  },
+];
+
 export const socialNetworks = [
   {
     name: 'Facebook',

@@ -65,6 +65,30 @@ exports['<App /> renders correctly 1'] = `
     }
   />
   <Memo(AboutMe)
+    basicInfo={
+      Array [
+        Object {
+          "iconClassName": "lni-calendar",
+          "name": "Date of birth",
+          "value": "16 January 1995",
+        },
+        Object {
+          "iconClassName": "lni-envelope",
+          "name": "Email",
+          "value": "ngvietminhdung@gmail.com",
+        },
+        Object {
+          "iconClassName": "lni-phone-handset",
+          "name": "Phone",
+          "value": "(076) 401-2912",
+        },
+        Object {
+          "iconClassName": "lni-map-marker",
+          "name": "Location",
+          "value": "Tan Binh District, HCM City",
+        },
+      ]
+    }
     greeting="Hi There! I'm Dung Nguyen"
     skills={
       Array [

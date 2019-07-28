@@ -1,12 +1,14 @@
 // @flow
 import React, { memo } from 'react';
 import type { AppProps } from './type';
-import { navbarItems, socialNetworks, skills } from './initialData';
 import logoUrl from '../../assets/images/logo.png';
 import hamburgerIconUrl from '../../assets/images/hamburger-icon.png';
 import closeIconUrl from '../../assets/images/close-icon.png';
 import avatarUrl from '../../assets/images/avatar.png';
 import constants from '../../constants';
+import {
+  navbarItems, basicInfo, socialNetworks, skills,
+} from './initialData';
 import Forms from '../../components/Forms';
 
 const { Navbar, Header, AboutMe } = Forms;
@@ -33,6 +35,7 @@ const App = (props: AppProps) => (
       title={aboutMe.TITLE}
       greeting={aboutMe.GREETING}
       summary={aboutMe.SUMMARY}
+      basicInfo={basicInfo}
       skills={skills}
     />
   </>
