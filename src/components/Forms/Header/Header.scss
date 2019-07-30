@@ -10,11 +10,11 @@
   overflow: hidden;
 
   .background {
-    width: 100%;
+    width: calc(100% + 100px);
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -50px;
     transition: all 0.25s ease-out 0s;
     background-size: cover;
     background: url($header-bg-img) no-repeat center;
