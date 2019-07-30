@@ -2,17 +2,29 @@
 @import '../../../styles/abstracts/mixins';
 
 .header {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  width: 100%;
-  background-size: cover;
-  background: url($header-bg-img) no-repeat center;
+  position: relative;
+  overflow: hidden;
+
+  .background {
+    width: calc(100% + 100px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    transition: all 0.25s ease-out 0s;
+    background-size: cover;
+    background: url($header-bg-img) no-repeat center;
+  }
 
   .content {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    z-index: 1;
 
     .introduction {
       flex: 1;

@@ -6,7 +6,13 @@ import type { NavbarBrandProps } from './type';
 
 const NavbarBrand = (props: NavbarBrandProps) => {
   const { logoUrl } = props;
-  return <img styleName="nav-brand" src={logoUrl} alt="" />;
+  return (
+    <img
+      styleName="nav-brand"
+      src={logoUrl}
+      alt=""
+    />
+  );
 };
 
-export default memo(CSSModules(NavbarBrand, styles));
+export default memo<NavbarBrandProps>(CSSModules(NavbarBrand, styles));

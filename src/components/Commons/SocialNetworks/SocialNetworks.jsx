@@ -19,4 +19,4 @@ const SocialNetworks = (props: SocialNetworksProps) => {
   );
 };
 
-export default memo(CSSModules(SocialNetworks, styles));
+export default memo<SocialNetworksProps>(CSSModules(SocialNetworks, styles));

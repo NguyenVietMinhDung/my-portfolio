@@ -19,4 +19,4 @@ const ProgressBars = (props: ProgressBarsProps) => {
   );
 };
 
-export default memo(CSSModules(ProgressBars, styles));
+export default memo<ProgressBarsProps>(CSSModules(ProgressBars, styles));

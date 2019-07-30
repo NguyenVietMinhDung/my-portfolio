@@ -32,7 +32,6 @@ const ProgressBarItem = (props: ProgressBarItemProps) => {
         <div
           styleName="value"
           data-aos="fade-in"
-          data-aos-offset="0"
           data-aos-once="true"
           data-aos-id={itemId}
         >
@@ -53,4 +52,4 @@ const ProgressBarItem = (props: ProgressBarItemProps) => {
   );
 };
 
-export default memo(CSSModules(ProgressBarItem, styles));
+export default memo<ProgressBarItemProps>(CSSModules(ProgressBarItem, styles));

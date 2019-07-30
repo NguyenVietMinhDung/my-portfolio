@@ -29,4 +29,4 @@ const NavbarMenu = (props: NavbarMenuProps) => {
   );
 };
 
-export default memo(CSSModules(NavbarMenu, styles));
+export default memo<NavbarMenuProps>(CSSModules(NavbarMenu, styles));

@@ -26,4 +26,4 @@ const NavbarItem = (props: NavbarItemProps) => {
   );
 };
 
-export default memo(CSSModules(NavbarItem, styles));
+export default memo<NavbarItemProps>(CSSModules(NavbarItem, styles));
