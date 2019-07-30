@@ -1,4 +1,4 @@
-export type HamburgerButtonProps = {
+export type Props = {
   closeIconUrl: string,
   hamburgerIconUrl: string,
   isVisible: boolean,

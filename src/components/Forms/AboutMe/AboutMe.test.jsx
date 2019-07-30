@@ -1,22 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import constants from '../../../constants';
-import { basicInfo } from '../../../containers/App/initialData';
+import {
+  TITLE, GREETING, SUMMARY, basicInfo, skills,
+} from '../../../constants/aboutMe';
 import AboutMe from './AboutMe';
 
-const {
-  aboutMe: {
-    ABOUT_ME_TITLE,
-    ABOUT_ME_GREETING,
-    ABOUT_ME_SUMMARY,
-  },
-} = constants;
-
 const defaultProps = {
-  title: ABOUT_ME_TITLE,
-  greeting: ABOUT_ME_GREETING,
-  summary: ABOUT_ME_SUMMARY,
+  title: TITLE,
+  greeting: GREETING,
+  summary: SUMMARY,
   basicInfo,
+  skills,
 };
 
 describe('<AboutMe />', () => {

@@ -3,12 +3,12 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
 import styles from './NavbarMenu.scss';
-import type { NavbarMenuProps } from './type';
+import type { Props } from './type';
 import NavbarItem from '../NavbarItem';
 
 const getStyleClass = isVisible => (isVisible ? styles['is-visible'] : styles['is-invisible']);
 
-const NavbarMenu = (props: NavbarMenuProps) => {
+const NavbarMenu = (props: Props) => {
   const {
     items, activatedIndex, isVisible, activateNavigationItem,
   } = props;
@@ -29,4 +29,4 @@ const NavbarMenu = (props: NavbarMenuProps) => {
   );
 };
 
-export default memo<NavbarMenuProps>(CSSModules(NavbarMenu, styles));
+export default memo<Props>(CSSModules(NavbarMenu, styles));

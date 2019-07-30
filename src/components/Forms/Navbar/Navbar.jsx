@@ -2,14 +2,14 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Navbar.scss';
-import type { NavbarProps } from './type';
+import type { Props } from './type';
 import NavbarBrand from './components/NavbarBrand';
 import NavbarMenu from './components/NavbarMenu';
 import HamburgerButton from './components/HamburgerButton';
 
-const Navbar = (props: NavbarProps) => {
+const Navbar = (props: Props) => {
   const {
-    navbarItems,
+    items,
     logoUrl,
     hamburgerIconUrl,
     closeIconUrl,
@@ -24,7 +24,7 @@ const Navbar = (props: NavbarProps) => {
         <NavbarBrand logoUrl={logoUrl} />
         <NavbarMenu
           isVisible={isVisible}
-          items={navbarItems}
+          items={items}
           activatedIndex={activatedIndex}
           activateNavigationItem={activateNavigationItem}
         />
@@ -39,4 +39,4 @@ const Navbar = (props: NavbarProps) => {
   );
 };
 
-export default memo<NavbarProps>(CSSModules(Navbar, styles));
+export default memo<Props>(CSSModules(Navbar, styles));

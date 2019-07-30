@@ -23,12 +23,17 @@ exports[`<Header /> renders correctly 1`] = `
       </div>
       <div
         className="title"
-      />
+      >
+        Dung Nguyen
+      </div>
       <div
         className="description"
-      />
+      >
+        A Freelance UI Designer & Web Developer
+      </div>
       <Memo(Button)
         handleClickEvent={[Function]}
+        text="VIEW MY WORK"
       />
     </div>
     <div

@@ -14,5 +14,9 @@ module.exports = (api) => {
     '@babel/preset-react',
   ];
 
-  return { presets };
+  const plugins = [
+    '@babel/plugin-proposal-export-default-from',
+  ];
+
+  return { presets, plugins };
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { skills } from '../../../../../containers/App/initialData';
+import { skills } from '../../../../../constants/aboutMe';
 import ProgressBarItem from './ProgressBarItem';
 
 const defaultProps = {

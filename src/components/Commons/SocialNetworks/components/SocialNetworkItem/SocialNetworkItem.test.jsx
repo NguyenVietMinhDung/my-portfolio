@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { socialNetworks } from '../../../../../containers/App/initialData';
+import { socialNetworks } from '../../../../../constants/header';
 import SocialNetworkItem from './SocialNetworkItem';
 
 const defaultProps = {

@@ -1,3 +1,3 @@
-export type NavbarBrandProps = {
+export type Props = {
   logoUrl: string,
 };

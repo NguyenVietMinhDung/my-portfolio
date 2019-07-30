@@ -1,3 +1,5 @@
-import { ProgressBarItem } from '../../type';
-
-export type ProgressBarItemProps = ProgressBarItem;
+export type Props = {
+  itemId: string,
+  name: string,
+  value: number,
+};

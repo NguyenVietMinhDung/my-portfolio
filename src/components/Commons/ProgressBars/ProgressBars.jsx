@@ -2,10 +2,10 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './ProgressBars.scss';
-import { ProgressBarsProps } from './type';
+import { Props } from './type';
 import ProgressBarItem from './components/ProgressBarItem';
 
-const ProgressBars = (props: ProgressBarsProps) => {
+const ProgressBars = (props: Props) => {
   const { items } = props;
   return (
     <ul styleName="progress-bars">
@@ -19,4 +19,4 @@ const ProgressBars = (props: ProgressBarsProps) => {
   );
 };
 
-export default memo<ProgressBarsProps>(CSSModules(ProgressBars, styles));
+export default memo<Props>(CSSModules(ProgressBars, styles));

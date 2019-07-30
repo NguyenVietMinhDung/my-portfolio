@@ -1,8 +1,7 @@
 import 'jsdom-global/register';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import closeIconUrl from '../../../../../assets/images/close-icon.png';
-import hamburgerIconUrl from '../../../../../assets/images/hamburger-icon.png';
+import { closeIconUrl, hamburgerIconUrl } from '../../../../../constants/navbar';
 import HamburgerButton from './HamburgerButton';
 
 const defaultProps = {

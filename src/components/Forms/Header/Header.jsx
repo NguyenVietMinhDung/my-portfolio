@@ -2,7 +2,7 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Header.scss';
-import type { HeaderProps } from './type';
+import type { Props } from './type';
 import Button from '../../Commons/Button';
 import SocialNetworks from '../../Commons/SocialNetworks';
 
@@ -19,7 +19,7 @@ const handleMouseEvent = isMouseMoveEvent => (event) => {
   }
 };
 
-const Header = (props: HeaderProps) => {
+const Header = (props: Props) => {
   const {
     name, description, avatarUrl, btnTxt, socialNetworks,
   } = props;
@@ -57,4 +57,4 @@ const Header = (props: HeaderProps) => {
   );
 };
 
-export default memo<HeaderProps>(CSSModules(Header, styles));
+export default memo<Props>(CSSModules(Header, styles));

@@ -1,147 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<App /> renders correctly 1'] = `
+exports[`<App /> renders correctly 1`] = `
 <Fragment>
-  <Memo(Navbar)
-    activateNavigationItem={[MockFunction]}
-    activatedIndex={0}
-    closeIconUrl="test-file-stub"
-    hamburgerIconUrl="test-file-stub"
-    isVisible={false}
-    logoUrl="test-file-stub"
-    navbarItems={
-      Array [
-        Object {
-          "name": "Home",
-          "url": "#",
-        },
-        Object {
-          "name": "About",
-          "url": "#",
-        },
-        Object {
-          "name": "Services",
-          "url": "#",
-        },
-        Object {
-          "name": "Portfolio",
-          "url": "#",
-        },
-        Object {
-          "name": "Blog",
-          "url": "#",
-        },
-        Object {
-          "name": "Contact",
-          "url": "#",
-        },
-      ]
-    }
-    openNavigationMenu={[MockFunction]}
-  />
-  <Memo(Header)
-    avatarUrl="test-file-stub"
-    btnTxt="VIEW MY WORK"
-    description="A Freelance UI Designer & Web Developer"
-    name="Dung Nguyen"
-    socialNetworks={
-      Array [
-        Object {
-          "iconUrl": "test-file-stub",
-          "name": "Facebook",
-          "url": "https://www.facebook.com/minh.dung.391",
-        },
-        Object {
-          "iconUrl": "test-file-stub",
-          "name": "Instagram",
-          "url": "https://www.instagram.com/dungvmnguyen",
-        },
-        Object {
-          "iconUrl": "test-file-stub",
-          "name": "LinkedIn",
-          "url": "https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114",
-        },
-      ]
-    }
-  />
-  <Memo(AboutMe)
-    basicInfo={
-      Array [
-        Object {
-          "iconClassName": "lni-calendar",
-          "name": "Date of birth",
-          "value": "16 January 1995",
-        },
-        Object {
-          "iconClassName": "lni-envelope",
-          "name": "Email",
-          "value": "ngvietminhdung@gmail.com",
-        },
-        Object {
-          "iconClassName": "lni-phone-handset",
-          "name": "Phone",
-          "value": "(076) 401-2912",
-        },
-        Object {
-          "iconClassName": "lni-map-marker",
-          "name": "Location",
-          "value": "Tan Binh District, HCM City",
-        },
-      ]
-    }
-    greeting="Hi There! I'm Dung Nguyen"
-    skills={
-      Array [
-        Object {
-          "itemId": "skill-1",
-          "name": "JavaScript, HTML, CSS",
-          "value": 100,
-        },
-        Object {
-          "itemId": "skill-2",
-          "name": "ReactJS, Redux",
-          "value": 80,
-        },
-        Object {
-          "itemId": "skill-3",
-          "name": "SCSS, Styled-Component",
-          "value": 80,
-        },
-        Object {
-          "itemId": "skill-4",
-          "name": "Jest, Enzyme",
-          "value": 70,
-        },
-        Object {
-          "itemId": "skill-5",
-          "name": "Webpack",
-          "value": 80,
-        },
-        Object {
-          "itemId": "skill-6",
-          "name": "Node.js",
-          "value": 50,
-        },
-        Object {
-          "itemId": "skill-7",
-          "name": "Git",
-          "value": 80,
-        },
-      ]
-    }
-    summary="I am an ambitious Web
-Application Developer who
-always tries to improve himself
-everyday, a quick learner who
-can absorb new ideas and can
-communicate clearly and
-effectively. Looking for an
-ambitious company which will
-challenge my developer and
-allows me to continue
-to develop my knowledge and
-potential."
-    title="About Me"
-  />
+  <div
+    className="loader"
+  >
+    <onlyUpdateForKeys(Loader)
+      color="#754ef9"
+      css={Object {}}
+      loading={true}
+      size={50}
+      sizeUnit="px"
+    />
+  </div>
 </Fragment>
 `;

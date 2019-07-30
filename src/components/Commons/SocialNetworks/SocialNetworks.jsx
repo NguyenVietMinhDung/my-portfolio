@@ -2,10 +2,10 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './SocialNetworks.scss';
-import type { SocialNetworksProps } from './type';
+import type { Props } from './type';
 import SocialNetworkItem from './components/SocialNetworkItem/index';
 
-const SocialNetworks = (props: SocialNetworksProps) => {
+const SocialNetworks = (props: Props) => {
   const { items } = props;
   return (
     <ul styleName="social-networks">
@@ -19,4 +19,4 @@ const SocialNetworks = (props: SocialNetworksProps) => {
   );
 };
 
-export default memo<SocialNetworksProps>(CSSModules(SocialNetworks, styles));
+export default memo<Props>(CSSModules(SocialNetworks, styles));

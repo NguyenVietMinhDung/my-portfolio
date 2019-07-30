@@ -1,4 +1,5 @@
-export type SocialNetworkItemProps = {
+export type Props = {
+  name: string,
   url: string,
   iconUrl: string,
 };

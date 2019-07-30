@@ -1,51 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<Navbar /> renders correctly 1'] = `
+exports[`<Navbar /> renders correctly 1`] = `
 <div
   className="nav"
 >
   <div
     className="content"
   >
-    <Memo(NavbarBrand)
-      logoUrl="test-file-stub"
-    />
+    <Memo(NavbarBrand) />
     <Memo(NavbarMenu)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       isVisible={false}
-      items={
-        Array [
-          Object {
-            "name": "Home",
-            "url": "#",
-          },
-          Object {
-            "name": "About",
-            "url": "#",
-          },
-          Object {
-            "name": "Services",
-            "url": "#",
-          },
-          Object {
-            "name": "Portfolio",
-            "url": "#",
-          },
-          Object {
-            "name": "Blog",
-            "url": "#",
-          },
-          Object {
-            "name": "Contact",
-            "url": "#",
-          },
-        ]
-      }
     />
     <Memo(HamburgerButton)
-      closeIconUrl="test-file-stub"
-      hamburgerIconUrl="test-file-stub"
       isVisible={false}
       openNavigationMenu={[MockFunction]}
     />

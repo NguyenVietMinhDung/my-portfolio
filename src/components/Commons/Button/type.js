@@ -1,4 +1,4 @@
-export type ButtonProps = {
+export type Props = {
   text: string,
   handleClickEvent: Function,
 };

@@ -3,13 +3,13 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import classNames from 'classnames';
 import styles from './NavbarItem.scss';
-import type { NavbarItemProps } from './type';
+import type { Props } from './type';
 
 const getStyleClass = (index, activatedIndex) => (index === activatedIndex ? styles['is-active'] : '');
 
 const activate = (activateNavigationItem, index) => () => activateNavigationItem(index);
 
-const NavbarItem = (props: NavbarItemProps) => {
+const NavbarItem = (props: Props) => {
   const {
     index, name, url, activateNavigationItem, activatedIndex,
   } = props;
@@ -26,4 +26,4 @@ const NavbarItem = (props: NavbarItemProps) => {
   );
 };
 
-export default memo<NavbarItemProps>(CSSModules(NavbarItem, styles));
+export default memo<Props>(CSSModules(NavbarItem, styles));

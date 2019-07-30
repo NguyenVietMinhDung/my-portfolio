@@ -3,9 +3,9 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Button.scss';
-import type { ButtonProps } from './type';
+import type { Props } from './type';
 
-const Button = (props: ButtonProps) => {
+const Button = (props: Props) => {
   const { text, handleClickEvent } = props;
   return (
     <div
@@ -17,4 +17,4 @@ const Button = (props: ButtonProps) => {
   );
 };
 
-export default memo<ButtonProps>(CSSModules(Button, styles));
+export default memo<Props>(CSSModules(Button, styles));

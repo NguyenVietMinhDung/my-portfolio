@@ -1,7 +1,7 @@
-import type { SocialNetworkItem } from '../../Commons/SocialNetworks/type';
+import type { Props as SocialNetworks } from '../../Commons/SocialNetworks/type';
 
-export type HeaderProps = {
-  socialNetworks: Array<SocialNetworkItem>,
+export type Props = {
+  socialNetworks: SocialNetworks,
   name: string,
   description: string,
   avatarUrl: string,

@@ -2,9 +2,9 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './SocialNetworkItem.scss';
-import type { SocialNetworkItemProps } from './type';
+import type { Props } from './type';
 
-const SocialNetworkItem = (props: SocialNetworkItemProps) => {
+const SocialNetworkItem = (props: Props) => {
   const { url, iconUrl } = props;
   return (
     <li>
@@ -15,4 +15,4 @@ const SocialNetworkItem = (props: SocialNetworkItemProps) => {
   );
 };
 
-export default memo<SocialNetworkItemProps>(CSSModules(SocialNetworkItem, styles));
+export default memo<Props>(CSSModules(SocialNetworkItem, styles));

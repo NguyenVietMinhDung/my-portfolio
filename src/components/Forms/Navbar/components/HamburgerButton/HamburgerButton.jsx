@@ -2,13 +2,13 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './HamburgerButton.scss';
-import { HamburgerButtonProps } from './type';
+import { Props } from './type';
 
 const getMenuIconUrl = (isVisible, closeIconUrl, hamburgerIconUrl) => (
   isVisible ? closeIconUrl : hamburgerIconUrl
 );
 
-const HamburgerButton = (props: HamburgerButtonProps) => {
+const HamburgerButton = (props: Props) => {
   const {
     isVisible, closeIconUrl, hamburgerIconUrl, openNavigationMenu,
   } = props;
@@ -22,4 +22,4 @@ const HamburgerButton = (props: HamburgerButtonProps) => {
   );
 };
 
-export default memo<HamburgerButtonProps>(CSSModules(HamburgerButton, styles));
+export default memo<Props>(CSSModules(HamburgerButton, styles));

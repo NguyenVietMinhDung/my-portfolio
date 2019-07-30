@@ -1,7 +1,7 @@
-import type { navbarItem } from './components/NavbarMenu/type';
+import type { Props as Items } from './components/NavbarMenu/type';
 
-export type NavbarProps = {
-  navbarItems: Array<navbarItem>,
+export type Props = {
+  items: Items,
   logoUrl: string,
   hamburgerIconUrl: string,
   closeIconUrl: string,

@@ -2,10 +2,10 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './AboutMe.scss';
-import type { AboutMeProps } from './type';
+import type { Props } from './type';
 import ProgressBars from '../../Commons/ProgressBars';
 
-const AboutMe = (props: AboutMeProps) => {
+const AboutMe = (props: Props) => {
   const {
     title, greeting, summary, basicInfo, skills,
   } = props;
@@ -46,4 +46,4 @@ const AboutMe = (props: AboutMeProps) => {
   );
 };
 
-export default memo<AboutMeProps>(CSSModules(AboutMe, styles));
+export default memo<Props>(CSSModules(AboutMe, styles));

@@ -1,4 +1,4 @@
-export type AppProps = {
+export type Props = {
   isVisible: boolean,
   activatedIndex: number,
   activateNavigationItem: Function,

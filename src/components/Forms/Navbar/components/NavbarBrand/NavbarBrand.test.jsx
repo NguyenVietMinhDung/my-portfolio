@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import logoUrl from '../../../../../assets/images/logo.png';
+import { logoUrl } from '../../../../../constants/navbar';
 import NavbarBrand from './NavbarBrand';
 
 const defaultProps = {

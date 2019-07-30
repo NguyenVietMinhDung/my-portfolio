@@ -1,9 +1,5 @@
-export type SocialNetworkItem = {
-  name: string,
-  url: string,
-  iconUrl: string,
-};
+import { Props as Item } from './components/SocialNetworkItem/type';
 
-export type SocialNetworksProps = {
-  items: Array<SocialNetworkItem>,
+export type Props = {
+  items: Array<Item>,
 };

@@ -3,7 +3,7 @@ import React, { memo, useEffect } from 'react';
 import CSSModules from 'react-css-modules';
 import { useCountUp } from 'react-countup';
 import styles from './ProgressBarItem.scss';
-import type { ProgressBarItemProps } from './type';
+import type { Props } from './type';
 
 const getPercentage = value => `${value}%`;
 
@@ -20,7 +20,7 @@ const usePercentage = (id, targetValue) => {
   return countUp;
 };
 
-const ProgressBarItem = (props: ProgressBarItemProps) => {
+const ProgressBarItem = (props: Props) => {
   const { name, value, itemId } = props;
   const percentage = usePercentage(itemId, value);
   return (
@@ -52,4 +52,4 @@ const ProgressBarItem = (props: ProgressBarItemProps) => {
   );
 };
 
-export default memo<ProgressBarItemProps>(CSSModules(ProgressBarItem, styles));
+export default memo<Props>(CSSModules(ProgressBarItem, styles));

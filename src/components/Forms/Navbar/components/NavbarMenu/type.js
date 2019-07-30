@@ -1,10 +1,10 @@
-export type navbarItem = {
+export type Item = {
   name: string,
   url: string,
 };
 
-export type NavbarMenuProps = {
-  items: Array<navbarItem>,
+export type Props = {
+  items: Array<Item>,
   activatedIndex: number,
   isVisible: boolean,
   activateNavigationItem: Function,

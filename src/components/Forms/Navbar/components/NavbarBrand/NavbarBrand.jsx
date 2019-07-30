@@ -2,9 +2,9 @@
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './NavbarBrand.scss';
-import type { NavbarBrandProps } from './type';
+import type { Props } from './type';
 
-const NavbarBrand = (props: NavbarBrandProps) => {
+const NavbarBrand = (props: Props) => {
   const { logoUrl } = props;
   return (
     <img
@@ -15,4 +15,4 @@ const NavbarBrand = (props: NavbarBrandProps) => {
   );
 };
 
-export default memo<NavbarBrandProps>(CSSModules(NavbarBrand, styles));
+export default memo<Props>(CSSModules(NavbarBrand, styles));

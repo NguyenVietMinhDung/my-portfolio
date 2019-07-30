@@ -1,4 +1,4 @@
-export type NavbarItemProps = {
+export type Props = {
   index: number,
   activatedIndex: number,
   name: string,

@@ -1,3 +1,5 @@
+import { Props as Skills } from '../../Commons/ProgressBars/type';
+
 export type SingleInfo = {
   iconClassName: string,
   name: string,
@@ -9,4 +11,5 @@ export type AboutMeProps = {
   greeting: string,
   summary: string,
   basicInfo: Array<SingleInfo>,
+  skills: Skills,
 };
