@@ -46,4 +46,4 @@ const AboutMe = (props: AboutMeProps) => {
   );
 };
 
-export default memo(CSSModules(AboutMe, styles));
+export default memo<AboutMeProps>(CSSModules(AboutMe, styles));

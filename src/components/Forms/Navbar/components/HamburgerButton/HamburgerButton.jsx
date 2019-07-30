@@ -22,4 +22,4 @@ const HamburgerButton = (props: HamburgerButtonProps) => {
   );
 };
 
-export default memo(CSSModules(HamburgerButton, styles));
+export default memo<HamburgerButtonProps>(CSSModules(HamburgerButton, styles));

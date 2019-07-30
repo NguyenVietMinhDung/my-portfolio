@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<Header /> renders correctly 1'] = `
+exports[`<Header /> renders correctly 1`] = `
 <div
   className="header"
+  onMouseMove={[Function]}
+  onMouseOut={[Function]}
 >
+  <div
+    className="background"
+    id="header-bg"
+  />
   <div
     className="content"
   >

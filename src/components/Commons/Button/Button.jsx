@@ -17,4 +17,4 @@ const Button = (props: ButtonProps) => {
   );
 };
 
-export default memo(CSSModules(Button, styles));
+export default memo<ButtonProps>(CSSModules(Button, styles));

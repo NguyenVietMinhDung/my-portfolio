@@ -39,4 +39,4 @@ const Navbar = (props: NavbarProps) => {
   );
 };
 
-export default memo(CSSModules(Navbar, styles));
+export default memo<NavbarProps>(CSSModules(Navbar, styles));

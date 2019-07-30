@@ -15,4 +15,4 @@ const SocialNetworkItem = (props: SocialNetworkItemProps) => {
   );
 };
 
-export default memo(CSSModules(SocialNetworkItem, styles));
+export default memo<SocialNetworkItemProps>(CSSModules(SocialNetworkItem, styles));

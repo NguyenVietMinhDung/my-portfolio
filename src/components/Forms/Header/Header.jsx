@@ -6,12 +6,33 @@ import type { HeaderProps } from './type';
 import Button from '../../Commons/Button';
 import SocialNetworks from '../../Commons/SocialNetworks';
 
+const handleMouseEvent = isMouseMoveEvent => (event) => {
+  const element = document.getElementById('header-bg');
+  if (element) {
+    const { style } = element;
+    if (isMouseMoveEvent) {
+      const { clientX, clientY } = event;
+      style.setProperty('transform', `translate3d(${clientX * 0.02}px, ${clientY * 0.02}px, 0)`);
+      return;
+    }
+    style.setProperty('transform', 'translate3d(0, 0, 0)');
+  }
+};
+
 const Header = (props: HeaderProps) => {
   const {
     name, description, avatarUrl, btnTxt, socialNetworks,
   } = props;
   return (
-    <div styleName="header">
+    <div
+      styleName="header"
+      onMouseMove={handleMouseEvent(true)}
+      onMouseOut={handleMouseEvent(false)}
+    >
+      <div
+        id="header-bg"
+        styleName="background"
+      />
       <div styleName="content">
         <div styleName="introduction">
           <div styleName="sub-title">HELLO, I&apos;M</div>
@@ -23,7 +44,10 @@ const Header = (props: HeaderProps) => {
           />
         </div>
         <div styleName="avatar">
-          <img src={avatarUrl} alt="" />
+          <img
+            src={avatarUrl}
+            alt=""
+          />
         </div>
       </div>
       <div styleName="social-networks">
@@ -33,4 +57,4 @@ const Header = (props: HeaderProps) => {
   );
 };
 
-export default memo(CSSModules(Header, styles));
+export default memo<HeaderProps>(CSSModules(Header, styles));
