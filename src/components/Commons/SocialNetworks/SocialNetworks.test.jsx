@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { socialNetworks } from '../../../constants/header';
+import { socialNetworks as items } from '../../../constants/app';
 import SocialNetworks from './SocialNetworks';
 
 const defaultProps = {
-  items: socialNetworks,
+  items,
 };
 
 describe('<SocialNetworks />', () => {

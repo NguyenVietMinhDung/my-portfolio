@@ -1,0 +1,32 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
+
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $dark-midnight-blue-color;
+
+  .content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px 15px;
+
+    .brand {
+      margin-left: -95px;
+      margin-bottom: 15px;
+    }
+
+    .slogan {
+      @include font(inherit, inherit, $white-color, inherit, inherit);
+      margin-bottom: 20px;
+    }
+  }
+
+  .copyright {
+    @include font(inherit, inherit, $white-color, inherit, inherit);
+    background-color: $midnight-blue-color;
+    padding: 20px;
+    text-align: center;
+  }
+}

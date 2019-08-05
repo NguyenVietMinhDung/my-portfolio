@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RelevantProjectItem /> renders correctly 1`] = `
+<li
+  className="relevant-project-item"
+>
+  <div
+    className="name"
+    data-aos="zoom-in"
+    data-aos-duration="2000"
+    data-aos-offset="100"
+  >
+    Huddle
+  </div>
+  <div
+    className="summary"
+    data-aos="zoom-in"
+    data-aos-duration="2000"
+    data-aos-offset="100"
+  >
+    <div
+      className="description"
+    >
+      A ticket-selling website for US high school events
+    </div>
+    <div
+      className="role"
+    >
+      Developer
+    </div>
+    <div
+      className="duration"
+    >
+      <i
+        className="lni-calendar"
+      />
+        
+      January 2019 - Present
+    </div>
+  </div>
+</li>
+`;

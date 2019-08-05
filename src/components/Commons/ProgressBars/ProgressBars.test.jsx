@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { skills } from '../../../constants/aboutMe';
+import { skills as items } from '../../../constants/aboutMe';
 import ProgressBars from './ProgressBars';
 
 const defaultProps = {
-  items: skills,
+  items,
 };
 
 describe('<ProgressBars />', () => {

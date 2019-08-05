@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<NavbarItems /> renders correctly 1'] = `
+exports[`<NavbarItems /> renders correctly 1`] = `
 <div
   className="nav-menu"
 >
@@ -11,49 +11,55 @@ exports['<NavbarItems /> renders correctly 1'] = `
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={0}
+      itemId="header"
       key="Home"
       name="Home"
-      url="#"
+      url="#home"
     />
     <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={1}
+      itemId="about-me"
       key="About"
       name="About"
-      url="#"
+      url="#about"
     />
     <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={2}
-      key="Services"
-      name="Services"
-      url="#"
+      itemId="work-experiences"
+      key="Experiences"
+      name="Experiences"
+      url="#experiences"
     />
     <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={3}
-      key="Portfolio"
-      name="Portfolio"
-      url="#"
+      itemId="relevant-projects"
+      key="Projects"
+      name="Projects"
+      url="#projects"
     />
     <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={4}
-      key="Blog"
-      name="Blog"
-      url="#"
+      itemId="my-educations"
+      key="Educations"
+      name="Educations"
+      url="#educations"
     />
     <Memo(NavbarItem)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={5}
+      itemId="footer"
       key="Contact"
       name="Contact"
-      url="#"
+      url="#contact"
     />
   </ul>
 </div>

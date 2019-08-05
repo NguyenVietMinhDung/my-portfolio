@@ -9,10 +9,14 @@ exports[`<ProgressBarItem /> renders correctly 1`] = `
   >
     <div
       className="name"
-    />
+    >
+      JavaScript, HTML, CSS
+    </div>
     <div
       className="value"
       data-aos="fade-in"
+      data-aos-id="skill-1"
+      data-aos-offset="40"
       data-aos-once="true"
     >
       0
@@ -29,7 +33,7 @@ exports[`<ProgressBarItem /> renders correctly 1`] = `
       data-aos-once="true"
       style={
         Object {
-          "width": "undefined%",
+          "width": "100%",
         }
       }
     />

@@ -1,7 +1,45 @@
+@import './variables';
+
 @mixin font($family, $transform, $color, $size, $weight) {
   font-family: $family;
   font-size: $size;
   font-weight: $weight;
   text-transform: $transform;
   color: $color;
+}
+
+@mixin form($bg-color) {
+  .background {
+    background-color: $bg-color;
+
+    .container {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding: 100px 0;
+      background-color: $bg-color;
+
+      .title {
+        padding-bottom: 25px;
+
+        @media (min-width: $layout-breakpoint) {
+          @include font(inherit, inherit, $black-color, 45px, 700);
+        }
+
+        @media (max-width: $layout-breakpoint) {
+          @include font(inherit, inherit, $black-color, 35px, 600);
+        }
+      }
+
+      .content {
+        @media (min-width: $layout-breakpoint) {
+          width: $layout-breakpoint;
+        }
+
+        @media (max-width: $layout-breakpoint) {
+          width: calc(100% - 30px);
+        }
+      }
+    }
+  }
 }

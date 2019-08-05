@@ -6,7 +6,7 @@
   "scripts": {
     "flow": "flow",
     "eslint": "eslint --ext .jsx,.js --fix src/**",
-    "test": "jest --coverage",
+    "test": "jest --coverage --collectCoverageFrom=src/**/*.jsx --collectCoverageFrom=!src/*.jsx",
     "build": "webpack --config webpack.prod.js",
     "build:ssr": "webpack --config webpack.ssr.js",
     "start:dev": "webpack-dev-server --open --hot --config webpack.dev.js",
@@ -69,6 +69,7 @@
     "react-spinners": "^0.5.13",
     "redux": "^4.0.1",
     "reselect": "^4.0.0",
-    "sass": "^1.22.2"
+    "sass": "^1.22.2",
+    "zenscroll": "^4.0.2"
   }
 }

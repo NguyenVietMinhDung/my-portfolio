@@ -33,6 +33,7 @@ const ProgressBarItem = (props: Props) => {
           styleName="value"
           data-aos="fade-in"
           data-aos-once="true"
+          data-aos-offset="40"
           data-aos-id={itemId}
         >
           {percentage}

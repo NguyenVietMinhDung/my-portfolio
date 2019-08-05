@@ -2,28 +2,32 @@
 
 exports[`<AboutMe /> renders correctly 1`] = `
 <div
-  className="about-me"
-  data-aos="fade-right"
-  data-aos-duration="2000"
+  className="background"
+  id="about-me"
 >
   <div
-    className="title"
-  >
-    About Me
-  </div>
-  <div
-    className="content"
+    className="container"
+    data-aos="fade-right"
+    data-aos-duration="2000"
   >
     <div
-      className="introduction"
+      className="title"
+    >
+      About Me
+    </div>
+    <div
+      className="content"
     >
       <div
-        className="greeting"
+        className="introduction"
       >
-        Hi There! I'm Dung Nguyen
-      </div>
-      <div>
-        I am an ambitious Web
+        <div
+          className="greeting"
+        >
+          Hi There! I'm Dung Nguyen
+        </div>
+        <div>
+          I am an ambitious Web
 Application Developer who
 always tries to improve himself
 everyday, a quick learner who
@@ -35,136 +39,79 @@ challenge my developer and
 allows me to continue
 to develop my knowledge and
 potential.
+        </div>
+        <Memo(BasicInformation)
+          items={
+            Array [
+              Object {
+                "iconClassName": "lni-calendar",
+                "name": "Date of birth",
+                "value": "16 January 1995",
+              },
+              Object {
+                "iconClassName": "lni-envelope",
+                "name": "Email",
+                "value": "ngvietminhdung@gmail.com",
+              },
+              Object {
+                "iconClassName": "lni-phone-handset",
+                "name": "Phone",
+                "value": "(076) 401-2912",
+              },
+              Object {
+                "iconClassName": "lni-map-marker",
+                "name": "Location",
+                "value": "Tan Binh District, HCM City",
+              },
+            ]
+          }
+        />
       </div>
-      <ul
-        className="basic-info"
+      <div
+        className="skills"
       >
-        <li
-          className="info"
-          key="Date of birth"
-        >
-          <i
-            className="lni-calendar info-icon"
-          />
-          <div
-            className="info-text"
-          >
-            <span>
-              Date of birth
-              :
-            </span>
-            <span>
-               
-              16 January 1995
-            </span>
-          </div>
-        </li>
-        <li
-          className="info"
-          key="Email"
-        >
-          <i
-            className="lni-envelope info-icon"
-          />
-          <div
-            className="info-text"
-          >
-            <span>
-              Email
-              :
-            </span>
-            <span>
-               
-              ngvietminhdung@gmail.com
-            </span>
-          </div>
-        </li>
-        <li
-          className="info"
-          key="Phone"
-        >
-          <i
-            className="lni-phone-handset info-icon"
-          />
-          <div
-            className="info-text"
-          >
-            <span>
-              Phone
-              :
-            </span>
-            <span>
-               
-              (076) 401-2912
-            </span>
-          </div>
-        </li>
-        <li
-          className="info"
-          key="Location"
-        >
-          <i
-            className="lni-map-marker info-icon"
-          />
-          <div
-            className="info-text"
-          >
-            <span>
-              Location
-              :
-            </span>
-            <span>
-               
-              Tan Binh District, HCM City
-            </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div
-      className="skills"
-    >
-      <Memo(ProgressBars)
-        items={
-          Array [
-            Object {
-              "itemId": "skill-1",
-              "name": "JavaScript, HTML, CSS",
-              "value": 100,
-            },
-            Object {
-              "itemId": "skill-2",
-              "name": "ReactJS, Redux",
-              "value": 80,
-            },
-            Object {
-              "itemId": "skill-3",
-              "name": "SCSS, Styled-Component",
-              "value": 80,
-            },
-            Object {
-              "itemId": "skill-4",
-              "name": "Jest, Enzyme",
-              "value": 70,
-            },
-            Object {
-              "itemId": "skill-5",
-              "name": "Webpack",
-              "value": 80,
-            },
-            Object {
-              "itemId": "skill-6",
-              "name": "Node.js",
-              "value": 50,
-            },
-            Object {
-              "itemId": "skill-7",
-              "name": "Git",
-              "value": 80,
-            },
-          ]
-        }
-      />
+        <Memo(ProgressBars)
+          items={
+            Array [
+              Object {
+                "itemId": "skill-1",
+                "name": "JavaScript, HTML, CSS",
+                "value": 100,
+              },
+              Object {
+                "itemId": "skill-2",
+                "name": "ReactJS, Redux",
+                "value": 80,
+              },
+              Object {
+                "itemId": "skill-3",
+                "name": "SCSS, Styled-Component",
+                "value": 80,
+              },
+              Object {
+                "itemId": "skill-4",
+                "name": "Jest, Enzyme",
+                "value": 70,
+              },
+              Object {
+                "itemId": "skill-5",
+                "name": "Webpack",
+                "value": 80,
+              },
+              Object {
+                "itemId": "skill-6",
+                "name": "Node.js",
+                "value": 50,
+              },
+              Object {
+                "itemId": "skill-7",
+                "name": "Git",
+                "value": 80,
+              },
+            ]
+          }
+        />
+      </div>
     </div>
   </div>
 </div>

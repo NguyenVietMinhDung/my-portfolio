@@ -23,8 +23,17 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
+            regExp: /(?!favicon.png)$/,
             outputPath: 'assets/images',
           },
+        },
+      },
+      {
+        test: /favicon\.png$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/images',
         },
       },
     ],

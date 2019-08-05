@@ -1,91 +1,45 @@
 @import '../../../styles/abstracts/variables';
 @import '../../../styles/abstracts/mixins';
 
-.about-me {
+@include form($white-color);
+
+.content {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 100%;
-  padding: 100px 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
 
-  .title {
-    @include font(inherit, inherit, $black-color, 45px, 700);
-    padding-bottom: 25px;
-  }
-
-  .content {
+  .introduction {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 25px 0;
 
-    .introduction {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: flex-start;
-      padding: 25px 0;
-
-      .greeting {
-        @include font(inherit, inherit, $black-color, 18px, 500);
-        padding-bottom: 15px;
-      }
-
-      .basic-info {
-        display: flex;
-        flex-flow: column wrap;
-
-        .info {
-          display: flex;
-          flex-flow: row wrap;
-          align-items: center;
-          margin-top: 5px;
-
-          &-icon {
-            color: $violet-color;
-          }
-
-          &-text {
-            padding-left: 10px;
-
-            span:first-child {
-              color: $black-color;
-            }
-          }
-        }
-      }
-
-
-      @media (min-width: $layout-breakpoint) {
-        flex: 0.45;
-      }
-
-      @media (max-width: $layout-breakpoint) {
-        flex: auto;
-      }
-    }
-
-    .skills {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: flex-end;
-      padding: 25px 0;
-
-      @media (min-width: $layout-breakpoint) {
-        flex: 0.45;
-      }
-
-      @media (max-width: $layout-breakpoint) {
-        flex: auto;
-      }
+    .greeting {
+      @include font(inherit, inherit, $black-color, 18px, 500);
+      padding-bottom: 15px;
     }
 
     @media (min-width: $layout-breakpoint) {
-      padding: 0;
-      width: $layout-breakpoint;
+      flex: 0.45;
     }
 
     @media (max-width: $layout-breakpoint) {
-      padding: 0 15px;
-      width: auto;
+      flex: auto;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    padding: 25px 0;
+
+    @media (min-width: $layout-breakpoint) {
+      flex: 0.45;
+    }
+
+    @media (max-width: $layout-breakpoint) {
+      flex: auto;
     }
   }
 }

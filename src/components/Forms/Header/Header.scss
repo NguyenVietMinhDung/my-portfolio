@@ -2,19 +2,18 @@
 @import '../../../styles/abstracts/mixins';
 
 .header {
-  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   position: relative;
   overflow: hidden;
 
-  .background {
-    width: calc(100% + 100px);
+  .dynamic-background {
+    width: calc(100% + 200px);
     height: 100%;
     position: absolute;
     top: 0;
-    left: -50px;
+    left: -100px;
     transition: all 0.25s ease-out 0s;
     background-size: cover;
     background: url($header-bg-img) no-repeat center;
@@ -29,7 +28,7 @@
     .introduction {
       flex: 1;
 
-      .title {
+      .name {
         @media (min-width: $layout-breakpoint) {
           @include font(inherit, uppercase, $black-color, 60px, 600);
         }
@@ -39,7 +38,7 @@
         }
       }
 
-      .sub-title {
+      .greeting {
         @media (min-width: $layout-breakpoint) {
           @include font(inherit, uppercase, $violet-color, 30px, 600);
         }

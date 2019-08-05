@@ -6,15 +6,19 @@ import type { Props } from './type';
 import Button from '../../Commons/Button';
 import SocialNetworks from '../../Commons/SocialNetworks';
 
-const handleMouseEvent = isMouseMoveEvent => (event) => {
-  const element = document.getElementById('header-bg');
+const handleMouseMoveEvent = (event) => {
+  const element = document.getElementById('dynamic-background');
+  if (element) {
+    const { clientX, clientY } = event;
+    const { style } = element;
+    style.setProperty('transform', `translate3d(${clientX * 0.04}px, ${clientY * 0.08}px, 0)`);
+  }
+};
+
+const handleMouseOutEvent = () => {
+  const element = document.getElementById('dynamic-background');
   if (element) {
     const { style } = element;
-    if (isMouseMoveEvent) {
-      const { clientX, clientY } = event;
-      style.setProperty('transform', `translate3d(${clientX * 0.02}px, ${clientY * 0.02}px, 0)`);
-      return;
-    }
     style.setProperty('transform', 'translate3d(0, 0, 0)');
   }
 };
@@ -25,18 +29,19 @@ const Header = (props: Props) => {
   } = props;
   return (
     <div
+      id="header"
       styleName="header"
-      onMouseMove={handleMouseEvent(true)}
-      onMouseOut={handleMouseEvent(false)}
+      onMouseMove={handleMouseMoveEvent}
+      onMouseOut={handleMouseOutEvent}
     >
       <div
-        id="header-bg"
-        styleName="background"
+        id="dynamic-background"
+        styleName="dynamic-background"
       />
       <div styleName="content">
         <div styleName="introduction">
-          <div styleName="sub-title">HELLO, I&apos;M</div>
-          <div styleName="title">{name}</div>
+          <div styleName="greeting">HELLO, I&apos;M</div>
+          <div styleName="name">{name}</div>
           <div styleName="description">{description}</div>
           <Button
             text={btnTxt}
