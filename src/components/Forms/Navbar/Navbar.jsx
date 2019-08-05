@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Navbar.scss';
 import type { Props } from './type';
-import NavbarBrand from './components/NavbarBrand';
+import Brand from '../../Commons/Brand';
 import NavbarMenu from './components/NavbarMenu';
 import HamburgerButton from './components/HamburgerButton';
 
@@ -21,12 +21,13 @@ const Navbar = (props: Props) => {
   return (
     <div styleName="nav">
       <div styleName="content">
-        <NavbarBrand logoUrl={logoUrl} />
+        <Brand logoUrl={logoUrl} />
         <NavbarMenu
           isVisible={isVisible}
           items={items}
           activatedIndex={activatedIndex}
           activateNavigationItem={activateNavigationItem}
+          openNavigationMenu={openNavigationMenu}
         />
         <HamburgerButton
           isVisible={isVisible}

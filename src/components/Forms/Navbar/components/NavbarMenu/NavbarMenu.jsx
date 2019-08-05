@@ -10,7 +10,7 @@ const getStyleClass = isVisible => (isVisible ? styles['is-visible'] : styles['i
 
 const NavbarMenu = (props: Props) => {
   const {
-    items, activatedIndex, isVisible, activateNavigationItem,
+    items, activatedIndex, isVisible, activateNavigationItem, openNavigationMenu,
   } = props;
   return (
     <div styleName="nav-menu">
@@ -21,6 +21,7 @@ const NavbarMenu = (props: Props) => {
             index={index}
             activatedIndex={activatedIndex}
             activateNavigationItem={activateNavigationItem}
+            openNavigationMenu={openNavigationMenu}
             {...item}
           />
         ))}

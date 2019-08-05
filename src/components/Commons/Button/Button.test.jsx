@@ -1,9 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { BUTTON_TEXT } from '../../../constants/header';
 import Button from './Button';
 
 const defaultProps = {
-  text: 'VIEW MY WORK',
+  text: BUTTON_TEXT,
   handleClickEvent: jest.fn(),
 };
 

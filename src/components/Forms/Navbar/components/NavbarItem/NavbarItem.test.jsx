@@ -9,6 +9,7 @@ const defaultProps = {
   name: 'Home',
   url: '#',
   activateNavigationItem: jest.fn(),
+  openNavigationMenu: jest.fn(),
 };
 
 describe('<NavbarItem />', () => {
@@ -21,5 +22,6 @@ describe('<NavbarItem />', () => {
     component.find('a').simulate('click');
     component.setProps({ activatedIndex: 2 });
     expect(component.props().activateNavigationItem).toBeCalledWith(component.props().index);
+    expect(component.props().openNavigationMenu).toBeCalled();
   });
 });

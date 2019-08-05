@@ -7,11 +7,12 @@ exports[`<Navbar /> renders correctly 1`] = `
   <div
     className="content"
   >
-    <Memo(NavbarBrand) />
+    <Memo(Brand) />
     <Memo(NavbarMenu)
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       isVisible={false}
+      openNavigationMenu={[MockFunction]}
     />
     <Memo(HamburgerButton)
       isVisible={false}

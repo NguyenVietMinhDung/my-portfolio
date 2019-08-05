@@ -23,7 +23,7 @@
       margin: 0 15px;
       overflow: hidden;
       transition: max-height .3s ease-out 0s;
-      box-shadow: 0 10px 15px 0 $box-shadow-color;
+      box-shadow: 0 10px 15px 0 $shadow-color;
       background-color: $white-color;
 
       &.is-visible {

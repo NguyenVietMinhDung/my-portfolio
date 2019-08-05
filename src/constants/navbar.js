@@ -1,29 +1,34 @@
 export const items = [
   {
+    itemId: 'header',
     name: 'Home',
-    url: '#',
+    url: '#home',
   },
   {
+    itemId: 'about-me',
     name: 'About',
-    url: '#',
+    url: '#about',
   },
   {
-    name: 'Services',
-    url: '#',
+    itemId: 'work-experiences',
+    name: 'Experiences',
+    url: '#experiences',
   },
   {
-    name: 'Portfolio',
-    url: '#',
+    itemId: 'relevant-projects',
+    name: 'Projects',
+    url: '#projects',
   },
   {
-    name: 'Blog',
-    url: '#',
+    itemId: 'my-educations',
+    name: 'Educations',
+    url: '#educations',
   },
   {
+    itemId: 'footer',
     name: 'Contact',
-    url: '#',
+    url: '#contact',
   },
 ];
-export logoUrl from '../assets/images/logo.png';
 export hamburgerIconUrl from '../assets/images/hamburger-icon.png';
 export closeIconUrl from '../assets/images/close-icon.png';

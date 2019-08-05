@@ -3,12 +3,13 @@
 exports[`<Header /> renders correctly 1`] = `
 <div
   className="header"
+  id="header"
   onMouseMove={[Function]}
   onMouseOut={[Function]}
 >
   <div
-    className="background"
-    id="header-bg"
+    className="dynamic-background"
+    id="dynamic-background"
   />
   <div
     className="content"
@@ -17,12 +18,12 @@ exports[`<Header /> renders correctly 1`] = `
       className="introduction"
     >
       <div
-        className="sub-title"
+        className="greeting"
       >
         HELLO, I'M
       </div>
       <div
-        className="title"
+        className="name"
       >
         Dung Nguyen
       </div>
@@ -33,7 +34,7 @@ exports[`<Header /> renders correctly 1`] = `
       </div>
       <Memo(Button)
         handleClickEvent={[Function]}
-        text="VIEW MY WORK"
+        text="DOWNLOAD MY CV"
       />
     </div>
     <div
@@ -64,7 +65,7 @@ exports[`<Header /> renders correctly 1`] = `
           Object {
             "iconUrl": "test-file-stub",
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114",
+            "url": "https://www.linkedin.com/in/dungvmn1995",
           },
         ]
       }

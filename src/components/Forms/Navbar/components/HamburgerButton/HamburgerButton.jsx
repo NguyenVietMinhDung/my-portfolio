@@ -4,9 +4,11 @@ import CSSModules from 'react-css-modules';
 import styles from './HamburgerButton.scss';
 import { Props } from './type';
 
-const getMenuIconUrl = (isVisible, closeIconUrl, hamburgerIconUrl) => (
-  isVisible ? closeIconUrl : hamburgerIconUrl
-);
+const getMenuIconUrl = (
+  isVisible,
+  closeIconUrl,
+  hamburgerIconUrl,
+) => (isVisible ? closeIconUrl : hamburgerIconUrl);
 
 const HamburgerButton = (props: Props) => {
   const {

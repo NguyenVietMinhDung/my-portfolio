@@ -8,10 +8,12 @@ import constants from '../../constants';
 import Forms from '../../components/Forms';
 
 const {
-  header, aboutMe, app, navbar,
+  header, footer, aboutMe, app, navbar, experiences, educations, projects,
 } = constants;
 
-const { Navbar, Header, AboutMe } = Forms;
+const {
+  Navbar, Header, Footer, AboutMe, Experiences, Educations, Projects,
+} = Forms;
 
 const useLoadingStatus = () => {
   const [loadingStatus, setLoadingStatus] = useState(true);
@@ -35,17 +37,17 @@ const App = (props: Props) => {
         <>
           <Navbar
             items={navbar.items}
-            logoUrl={navbar.logoUrl}
             hamburgerIconUrl={navbar.hamburgerIconUrl}
             closeIconUrl={navbar.closeIconUrl}
+            logoUrl={app.logoUrl}
             {...props}
           />
           <Header
             name={header.NAME}
             description={header.DESCRIPTION}
             btnTxt={header.BUTTON_TEXT}
-            socialNetworks={header.socialNetworks}
             avatarUrl={header.avatarUrl}
+            socialNetworks={app.socialNetworks}
           />
           <AboutMe
             title={aboutMe.TITLE}
@@ -53,6 +55,24 @@ const App = (props: Props) => {
             summary={aboutMe.SUMMARY}
             basicInfo={aboutMe.basicInfo}
             skills={aboutMe.skills}
+          />
+          <Experiences
+            title={experiences.TITLE}
+            timeline={experiences.timeline}
+          />
+          <Projects
+            title={projects.TITLE}
+            items={projects.items}
+          />
+          <Educations
+            title={educations.TITLE}
+            timeline={educations.timeline}
+          />
+          <Footer
+            slogan={footer.SLOGAN}
+            copyright={footer.COPYRIGHT}
+            socialNetworks={app.socialNetworks}
+            logoUrl={app.logoUrl}
           />
         </>
       )}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<SocialNetworks /> renders correctly 1'] = `
+exports[`<SocialNetworks /> renders correctly 1`] = `
 <ul
   className="social-networks"
 >
@@ -20,7 +20,7 @@ exports['<SocialNetworks /> renders correctly 1'] = `
     iconUrl="test-file-stub"
     key="LinkedIn"
     name="LinkedIn"
-    url="https://www.linkedin.com/in/d%C5%A9ng-nguy%E1%BB%85n-502865114"
+    url="https://www.linkedin.com/in/dungvmn1995"
   />
 </ul>
 `;
