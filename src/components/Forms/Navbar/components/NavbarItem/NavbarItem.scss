@@ -2,45 +2,50 @@
 @import '../../../../../styles/abstracts/mixins';
 
 .nav-item {
-  @media (min-width: $layout-breakpoint) {
-    position: relative;
+	@media (min-width: $layout-breakpoint) {
+		position: relative;
 
-    &:hover, &.is-active {
-      a {
-        color: $violet-color;
-        &::before {
-          height: 45px;
-        }
-      }
-    }
+		&:hover,
+		&.is-active {
+			a {
+				color: $violet-color;
 
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
+				&::before {
+					height: 45px;
+				}
+			}
+		}
 
-    a::before {
-      position: absolute;
-      left: 50%;
-      top: -50px;
-      content: '';
-      width: 3px;
-      height: 0;
-      background-color: $violet-color;
-      transition: height .3s ease-out 0s;
-    }
-  }
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
 
-  @media (max-width: $layout-breakpoint) {
-    margin: 4px 0;
+		a::before {
+			position: absolute;
+			top: -50px;
+			left: 50%;
 
-    &.is-active {
-      a {
-        color: $violet-color;
-      }
-    }
-  }
+			width: 3px;
+			height: 0;
 
-  .content {
-    @include font(inherit, uppercase, $light-grey-color, inherit, 500);
-  }
+			content: '';
+			transition: height 0.3s ease-out 0s;
+
+			background-color: $violet-color;
+		}
+	}
+
+	@media (max-width: $layout-breakpoint) {
+		margin: 4px 0;
+
+		&.is-active {
+			a {
+				color: $violet-color;
+			}
+		}
+	}
+
+	.content {
+		@include font(inherit, uppercase, $light-grey-color, inherit, 500);
+	}
 }

@@ -2,31 +2,35 @@
 @import '../../../styles/abstracts/mixins';
 
 .footer {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: $dark-midnight-blue-color;
+	display: flex;
 
-  .content {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    padding: 30px 15px;
+	background-color: $dark-midnight-blue-color;
+	flex-flow: column wrap;
 
-    .brand {
-      margin-left: -95px;
-      margin-bottom: 15px;
-    }
+	.content {
+		display: flex;
 
-    .slogan {
-      @include font(inherit, inherit, $white-color, inherit, inherit);
-      margin-bottom: 20px;
-    }
-  }
+		padding: 30px 15px;
+		align-items: center;
+		flex-flow: column wrap;
 
-  .copyright {
-    @include font(inherit, inherit, $white-color, inherit, inherit);
-    background-color: $midnight-blue-color;
-    padding: 20px;
-    text-align: center;
-  }
+		.brand {
+			margin-bottom: 15px;
+			margin-left: -95px;
+		}
+
+		.slogan {
+			@include font(inherit, inherit, $white-color, inherit, inherit);
+			margin-bottom: 20px;
+		}
+	}
+
+	.copyright {
+		@include font(inherit, inherit, $white-color, inherit, inherit);
+		padding: 20px;
+
+		text-align: center;
+
+		background-color: $midnight-blue-color;
+	}
 }

@@ -4,42 +4,44 @@
 @include form($white-color);
 
 .content {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 
-  .introduction {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    padding: 25px 0;
+	.introduction {
+		display: flex;
 
-    .greeting {
-      @include font(inherit, inherit, $black-color, 18px, 500);
-      padding-bottom: 15px;
-    }
+		padding: 25px 0;
+		align-items: flex-start;
+		flex-flow: column wrap;
 
-    @media (min-width: $layout-breakpoint) {
-      flex: 0.45;
-    }
+		.greeting {
+			@include font(inherit, inherit, $black-color, 18px, 500);
+			padding-bottom: 15px;
+		}
 
-    @media (max-width: $layout-breakpoint) {
-      flex: auto;
-    }
-  }
+		@media (min-width: $layout-breakpoint) {
+			flex: 0.45;
+		}
 
-  .skills {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-end;
-    padding: 25px 0;
+		@media (max-width: $layout-breakpoint) {
+			flex: auto;
+		}
+	}
 
-    @media (min-width: $layout-breakpoint) {
-      flex: 0.45;
-    }
+	.skills {
+		display: flex;
 
-    @media (max-width: $layout-breakpoint) {
-      flex: auto;
-    }
-  }
+		padding: 25px 0;
+		align-items: flex-end;
+		flex-flow: column wrap;
+
+		@media (min-width: $layout-breakpoint) {
+			flex: 0.45;
+		}
+
+		@media (max-width: $layout-breakpoint) {
+			flex: auto;
+		}
+	}
 }

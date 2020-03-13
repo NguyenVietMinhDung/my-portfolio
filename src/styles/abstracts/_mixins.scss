@@ -1,45 +1,49 @@
 @import './variables';
 
 @mixin font($family, $transform, $color, $size, $weight) {
-  font-family: $family;
-  font-size: $size;
-  font-weight: $weight;
-  text-transform: $transform;
-  color: $color;
+	text-transform: $transform;
+
+	color: $color;
+
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
 }
 
 @mixin form($bg-color) {
-  .background {
-    background-color: $bg-color;
+	.background {
+		background-color: $bg-color;
 
-    .container {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      padding: 100px 0;
-      background-color: $bg-color;
+		.container {
+			display: flex;
 
-      .title {
-        padding-bottom: 25px;
+			padding: 100px 0;
 
-        @media (min-width: $layout-breakpoint) {
-          @include font(inherit, inherit, $black-color, 45px, 700);
-        }
+			background-color: $bg-color;
+			align-items: center;
+			flex-flow: column wrap;
 
-        @media (max-width: $layout-breakpoint) {
-          @include font(inherit, inherit, $black-color, 35px, 600);
-        }
-      }
+			.title {
+				padding-bottom: 25px;
 
-      .content {
-        @media (min-width: $layout-breakpoint) {
-          width: $layout-breakpoint;
-        }
+				@media (min-width: $layout-breakpoint) {
+					@include font(inherit, inherit, $black-color, 45px, 700);
+				}
 
-        @media (max-width: $layout-breakpoint) {
-          width: calc(100% - 30px);
-        }
-      }
-    }
-  }
+				@media (max-width: $layout-breakpoint) {
+					@include font(inherit, inherit, $black-color, 35px, 600);
+				}
+			}
+
+			.content {
+				@media (min-width: $layout-breakpoint) {
+					width: $layout-breakpoint;
+				}
+
+				@media (max-width: $layout-breakpoint) {
+					width: calc(100% - 30px);
+				}
+			}
+		}
+	}
 }

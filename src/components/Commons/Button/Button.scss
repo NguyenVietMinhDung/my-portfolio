@@ -2,21 +2,24 @@
 @import '../../../styles/abstracts/mixins';
 
 .btn {
-  padding: 0 40px;
-  width: fit-content;
-  line-height: 48px;
-  user-select: none;
-  cursor: pointer;
-  border-radius: 50px;
-  box-shadow: 0 5px 8px 0 $violet-color;
-  border: 1px solid $violet-color;
-  background-color: $violet-color;
-  transition: all .3s ease-out 0s;
+	width: fit-content;
+	padding: 0 40px;
 
-  &:hover {
-    background-color: $white-color;
-    color: $violet-color;
-  }
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.3s ease-out 0s;
 
-  @include font(inherit, uppercase, $white-color, 15px, 500);
+	border: 1px solid $violet-color;
+	border-radius: 50px;
+	background-color: $violet-color;
+	box-shadow: 0 5px 8px 0 $violet-color;
+
+	line-height: 48px;
+
+	&:hover {
+		color: $violet-color;
+		background-color: $white-color;
+	}
+
+	@include font(inherit, uppercase, $white-color, 15px, 500);
 }
