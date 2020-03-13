@@ -6,6 +6,7 @@
   "scripts": {
     "flow": "flow",
     "eslint": "eslint --ext .jsx,.js --fix src/**",
+    "stylelint": "stylelint --fix src/**/*.scss",
     "test": "jest --coverage --collectCoverageFrom=src/**/*.jsx --collectCoverageFrom=!src/*.jsx",
     "build": "webpack --config webpack.prod.js",
     "build:ssr": "webpack --config webpack.ssr.js",
@@ -41,6 +42,8 @@
     "jsdom-global": "3.0.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylelint": "^13.2.0",
+    "stylelint-order": "^4.0.0",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",

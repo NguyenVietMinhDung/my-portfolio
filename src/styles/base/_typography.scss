@@ -3,5 +3,5 @@
 
 // Default font
 body {
-  @include font($default-font-family, inherit, $light-grey-color, 16px, 400);
+	@include font($default-font-family, inherit, $light-grey-color, 16px, 400);
 }
