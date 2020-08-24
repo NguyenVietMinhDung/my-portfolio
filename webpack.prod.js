@@ -7,6 +7,9 @@ const common = require('./webpack.common');
 module.exports = merger(common, {
   mode: 'production',
   devtool: 'source-map',
+  output: {
+    filename: 'bundle.map.js',
+  },
   module: {
     rules: [
       {
@@ -43,7 +46,7 @@ module.exports = merger(common, {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin('bundle.map.css'),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
