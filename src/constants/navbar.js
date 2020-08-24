@@ -25,6 +25,11 @@ export const items = [
     url: '#educations',
   },
   {
+    itemId: 'my-achievements',
+    name: 'Achievements',
+    url: '#achievements',
+  },
+  {
     itemId: 'footer',
     name: 'Contact',
     url: '#contact',

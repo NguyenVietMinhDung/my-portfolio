@@ -56,6 +56,15 @@ exports[`<NavbarItems /> renders correctly 1`] = `
       activateNavigationItem={[MockFunction]}
       activatedIndex={0}
       index={5}
+      itemId="my-achievements"
+      key="Achievements"
+      name="Achievements"
+      url="#achievements"
+    />
+    <Memo(NavbarItem)
+      activateNavigationItem={[MockFunction]}
+      activatedIndex={0}
+      index={6}
       itemId="footer"
       key="Contact"
       name="Contact"

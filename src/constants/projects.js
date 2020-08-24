@@ -19,7 +19,7 @@ export const items = [
   {
     isCurrentProject: false,
     name: 'ERTPMTool',
-    role: 'Team Leader - Developer',
+    role: 'Developer',
     startDate: 'July 2018',
     endDate: 'January 2019',
     description: 'A micro-services project management application\n'

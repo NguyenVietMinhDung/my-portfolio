@@ -29,7 +29,7 @@ which helps managers to keep track of resource allocation"
     isCurrentProject={false}
     key="ERTPMTool"
     name="ERTPMTool"
-    role="Team Leader - Developer"
+    role="Developer"
     startDate="July 2018"
   />
   <Memo(RelevantProjectItem)

@@ -7,10 +7,10 @@ import utils from '../../../../../utils';
 
 const RelevantProjectItem = (props: Props) => {
   const {
-    isCurrentProject, name, role, description, startDate, endDate,
+    name, role, description, startDate, endDate,
   } = props;
   const { date: { getDuration } } = utils;
-  const duration = getDuration(isCurrentProject, startDate, endDate);
+  const duration = getDuration(startDate, endDate);
   return (
     <li styleName="relevant-project-item">
       <div

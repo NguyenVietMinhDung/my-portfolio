@@ -10,16 +10,13 @@ exports[`<Event /> renders correctly 1`] = `
     className="organization"
   />
   <div
-    className="role"
-  />
-  <div
     className="duration"
   >
     <i
       className="lni-calendar"
     />
       
-    undefined - undefined
+    undefined - Present
   </div>
 </li>
 `;

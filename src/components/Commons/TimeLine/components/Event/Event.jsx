@@ -7,10 +7,10 @@ import utils from '../../../../../utils';
 
 const Event = (props: Props) => {
   const {
-    isCurrentRole, organization, role, startDate, endDate, description,
+    organization, role, startDate, endDate, description,
   } = props;
   const { date: { getDuration } } = utils;
-  const duration = getDuration(isCurrentRole, startDate, endDate);
+  const duration = getDuration(startDate, endDate);
   return (
     <li
       styleName="event"
@@ -18,7 +18,7 @@ const Event = (props: Props) => {
       data-aos-duration="2000"
     >
       <div styleName="organization">{organization}</div>
-      <div styleName="role">{role}</div>
+      {role && <div styleName="role">{role}</div>}
       <div styleName="duration">
         <i className="lni-calendar" />
         &nbsp;&nbsp;{duration}
