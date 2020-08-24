@@ -19,9 +19,17 @@ exports[`<TimeLine /> renders correctly 1`] = `
     className="events"
   >
     <Memo(Event)
-      description="Currently, I am a Web Application Developer and used to have an opportunity to work as a leader of a team"
-      isCurrentRole={true}
+      endDate="May 2020"
+      isCurrentRole={false}
       key="1"
+      organization="Ubitec"
+      role="JAVASCRIPT DEVELOPER"
+      startDate="September 2019"
+    />
+    <Memo(Event)
+      endDate="August 2019"
+      isCurrentRole={false}
+      key="2"
       organization="KMS Technology Inc., Vietnam"
       role="SOFTWARE ENGINEER"
       startDate="November 2017"
@@ -30,7 +38,7 @@ exports[`<TimeLine /> renders correctly 1`] = `
       description="I had joined KMS as a fresher before graduating. I had been trained to become an official employee for 2 months. Then, I joined one of the biggest project team in the company."
       endDate="November 2017"
       isCurrentJob={false}
-      key="2"
+      key="3"
       organization="KMS Technology Inc., Vietnam"
       role="FRESHER"
       startDate="September 2017"

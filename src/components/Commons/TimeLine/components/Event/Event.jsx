@@ -23,7 +23,7 @@ const Event = (props: Props) => {
         <i className="lni-calendar" />
         &nbsp;&nbsp;{duration}
       </div>
-      <div>{description}</div>
+      {description && <div>{description}</div>}
     </li>
   );
 };

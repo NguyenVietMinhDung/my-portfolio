@@ -101,37 +101,32 @@ exports[`<App /> renders correctly 1`] = `
         Object {
           "itemId": "skill-1",
           "name": "JavaScript, HTML, CSS",
-          "value": 100,
+          "value": 80,
         },
         Object {
           "itemId": "skill-2",
-          "name": "ReactJS, Redux",
-          "value": 80,
+          "name": "ReactJS",
+          "value": 60,
         },
         Object {
           "itemId": "skill-3",
-          "name": "SCSS, Styled-Component",
-          "value": 80,
-        },
-        Object {
-          "itemId": "skill-4",
-          "name": "Jest, Enzyme",
-          "value": 70,
+          "name": "SCSS",
+          "value": 60,
         },
         Object {
           "itemId": "skill-5",
           "name": "Webpack",
-          "value": 80,
+          "value": 50,
         },
         Object {
           "itemId": "skill-6",
           "name": "Node.js",
-          "value": 50,
+          "value": 60,
         },
         Object {
           "itemId": "skill-7",
           "name": "Git",
-          "value": 80,
+          "value": 60,
         },
       ]
     }
@@ -155,9 +150,17 @@ potential."
         "iconClassName": "lni-briefcase",
         "items": Array [
           Object {
-            "description": "Currently, I am a Web Application Developer and used to have an opportunity to work as a leader of a team",
-            "isCurrentRole": true,
+            "endDate": "May 2020",
+            "isCurrentRole": false,
             "key": 1,
+            "organization": "Ubitec",
+            "role": "JAVASCRIPT DEVELOPER",
+            "startDate": "September 2019",
+          },
+          Object {
+            "endDate": "August 2019",
+            "isCurrentRole": false,
+            "key": 2,
             "organization": "KMS Technology Inc., Vietnam",
             "role": "SOFTWARE ENGINEER",
             "startDate": "November 2017",
@@ -166,7 +169,7 @@ potential."
             "description": "I had joined KMS as a fresher before graduating. I had been trained to become an official employee for 2 months. Then, I joined one of the biggest project team in the company.",
             "endDate": "November 2017",
             "isCurrentJob": false,
-            "key": 2,
+            "key": 3,
             "organization": "KMS Technology Inc., Vietnam",
             "role": "FRESHER",
             "startDate": "September 2017",
@@ -180,14 +183,23 @@ potential."
     items={
       Array [
         Object {
+          "description": "A chat tool that helps customers can contact with bankers and versa vice",
+          "endDate": "May 2020",
+          "isCurrentProject": false,
+          "name": "Textme",
+          "role": "Developer",
+          "startDate": "September 2019",
+        },
+        Object {
           "description": "A ticket-selling website for US high school events",
-          "isCurrentProject": true,
+          "endDate": "June 2019",
+          "isCurrentProject": false,
           "name": "Huddle",
           "role": "Developer",
           "startDate": "January 2019",
         },
         Object {
-          "description": "A microservices project management application
+          "description": "A micro-services project management application
 which helps managers to keep track of resource allocation",
           "endDate": "January 2019",
           "isCurrentProject": false,

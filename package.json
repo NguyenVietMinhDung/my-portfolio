@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "flow": "flow",
-    "eslint": "eslint --ext .jsx,.js --fix src/**",
+    "eslint": "eslint --ext .jsx,.js --fix 'src/**'",
     "stylelint": "stylelint --fix src/**/*.scss",
     "test": "jest --coverage --collectCoverageFrom=src/**/*.jsx --collectCoverageFrom=!src/*.jsx",
     "build": "webpack --config webpack.prod.js",

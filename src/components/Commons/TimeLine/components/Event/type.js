@@ -4,5 +4,5 @@ export type Props = {
   role: string,
   startDate: string,
   endDate: string,
-  description: string,
+  description: ?string,
 };

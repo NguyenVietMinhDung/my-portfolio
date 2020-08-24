@@ -76,37 +76,32 @@ potential.
               Object {
                 "itemId": "skill-1",
                 "name": "JavaScript, HTML, CSS",
-                "value": 100,
+                "value": 80,
               },
               Object {
                 "itemId": "skill-2",
-                "name": "ReactJS, Redux",
-                "value": 80,
+                "name": "ReactJS",
+                "value": 60,
               },
               Object {
                 "itemId": "skill-3",
-                "name": "SCSS, Styled-Component",
-                "value": 80,
-              },
-              Object {
-                "itemId": "skill-4",
-                "name": "Jest, Enzyme",
-                "value": 70,
+                "name": "SCSS",
+                "value": 60,
               },
               Object {
                 "itemId": "skill-5",
                 "name": "Webpack",
-                "value": 80,
+                "value": 50,
               },
               Object {
                 "itemId": "skill-6",
                 "name": "Node.js",
-                "value": 50,
+                "value": 60,
               },
               Object {
                 "itemId": "skill-7",
                 "name": "Git",
-                "value": 80,
+                "value": 60,
               },
             ]
           }

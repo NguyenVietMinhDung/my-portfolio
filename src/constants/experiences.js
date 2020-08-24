@@ -4,15 +4,22 @@ export const timeline = {
   items: [
     {
       key: 1,
-      isCurrentRole: true,
-      organization: 'KMS Technology Inc., Vietnam',
-      role: 'SOFTWARE ENGINEER',
-      startDate: 'November 2017',
-      description: 'Currently, I am a Web Application Developer '
-      + 'and used to have an opportunity to work as a leader of a team',
+      isCurrentRole: false,
+      organization: 'Ubitec',
+      role: 'JAVASCRIPT DEVELOPER',
+      startDate: 'September 2019',
+      endDate: 'May 2020',
     },
     {
       key: 2,
+      isCurrentRole: false,
+      organization: 'KMS Technology Inc., Vietnam',
+      role: 'SOFTWARE ENGINEER',
+      startDate: 'November 2017',
+      endDate: 'August 2019',
+    },
+    {
+      key: 3,
       isCurrentJob: false,
       organization: 'KMS Technology Inc., Vietnam',
       role: 'FRESHER',

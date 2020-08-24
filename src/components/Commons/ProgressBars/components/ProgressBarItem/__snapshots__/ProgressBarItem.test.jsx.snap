@@ -33,7 +33,7 @@ exports[`<ProgressBarItem /> renders correctly 1`] = `
       data-aos-once="true"
       style={
         Object {
-          "width": "100%",
+          "width": "80%",
         }
       }
     />

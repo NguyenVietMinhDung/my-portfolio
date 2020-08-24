@@ -21,6 +21,5 @@ exports[`<Event /> renders correctly 1`] = `
       
     undefined - undefined
   </div>
-  <div />
 </li>
 `;
