@@ -3,9 +3,10 @@ import React, { memo } from 'react';
 import type { Props } from './type';
 import constants from '../../constants';
 import Forms from '../../components/Forms';
+import Achievements from '../../components/Forms/Achievements/Achievements';
 
 const {
-  header, footer, aboutMe, app, navbar, experiences, educations, projects,
+  header, footer, aboutMe, app, navbar, experiences, educations, projects, achievements,
 } = constants;
 
 const {
@@ -46,6 +47,10 @@ const App = (props: Props) => (
     <Educations
       title={educations.TITLE}
       timeline={educations.timeline}
+    />
+    <Achievements
+      title={achievements.TITLE}
+      timeline={achievements.timeline}
     />
     <Footer
       slogan={footer.SLOGAN}

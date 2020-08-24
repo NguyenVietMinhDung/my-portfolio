@@ -4,7 +4,6 @@ export const timeline = {
   items: [
     {
       key: 1,
-      isCurrentRole: false,
       organization: 'Ubitec',
       role: 'JAVASCRIPT DEVELOPER',
       startDate: 'September 2019',
@@ -12,7 +11,6 @@ export const timeline = {
     },
     {
       key: 2,
-      isCurrentRole: false,
       organization: 'KMS Technology Inc., Vietnam',
       role: 'SOFTWARE ENGINEER',
       startDate: 'November 2017',
@@ -20,7 +18,6 @@ export const timeline = {
     },
     {
       key: 3,
-      isCurrentJob: false,
       organization: 'KMS Technology Inc., Vietnam',
       role: 'FRESHER',
       startDate: 'September 2017',

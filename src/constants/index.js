@@ -7,6 +7,7 @@ import * as aboutMe from './aboutMe';
 import * as experiences from './experiences';
 import * as educations from './educations';
 import * as projects from './projects';
+import * as achievements from './achievements';
 
 export default {
   actions,
@@ -18,4 +19,5 @@ export default {
   experiences,
   educations,
   projects,
+  achievements,
 };
