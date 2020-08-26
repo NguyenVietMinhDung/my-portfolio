@@ -1,15 +1,15 @@
 // @flow
 import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './Experiences.scss';
-import { Props } from './type';
-import TimeLine from '../../Commons/TimeLine';
+import styles from './Achievements.scss';
+import type Props from './type';
+import { TimeLine } from '../../commons';
 
-const Experiences = (props: Props) => {
+const Achievements = (props: Props) => {
   const { title, timeline } = props;
   return (
     <div
-      id="work-experiences"
+      id="my-achievements"
       styleName="background"
     >
       <div
@@ -26,4 +26,4 @@ const Experiences = (props: Props) => {
   );
 };
 
-export default memo<Props>(CSSModules(Experiences, styles));
+export default memo<Props>(CSSModules(Achievements, styles));

@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './SocialNetworks.scss';
 import type { Props } from './type';
-import SocialNetworkItem from './components/SocialNetworkItem/index';
+import SocialNetworkItem from './components/SocialNetworkItem';
 
 const SocialNetworks = (props: Props) => {
   const { items } = props;

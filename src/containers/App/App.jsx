@@ -2,16 +2,15 @@
 import React, { memo } from 'react';
 import type { Props } from './type';
 import constants from '../../constants';
-import Forms from '../../components/Forms';
-import Achievements from '../../components/Forms/Achievements/Achievements';
+import forms from '../../components/forms';
 
 const {
   header, footer, aboutMe, app, navbar, experiences, educations, projects, achievements,
 } = constants;
 
 const {
-  Navbar, Header, Footer, AboutMe, Experiences, Educations, Projects,
-} = Forms;
+  Navbar, Header, Footer, AboutMe, Experiences, Educations, Projects, Achievements,
+} = forms;
 
 const App = (props: Props) => (
   <>

@@ -3,8 +3,8 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Footer.scss';
 import type { Props } from './type';
-import Brand from '../../Commons/Brand';
-import SocialNetworks from '../../Commons/SocialNetworks';
+import Brand from '../../commons/Brand';
+import { SocialNetworks } from '../../commons';
 
 const Footer = (props: Props) => {
   const {
