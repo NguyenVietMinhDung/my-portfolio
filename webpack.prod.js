@@ -7,6 +7,10 @@ const common = require('./webpack.common');
 module.exports = merger(common, {
   mode: 'production',
   devtool: 'source-map',
+  output: {
+    chunkFilename: '[name].[hash].chunk.js',
+    filename: '[name].[hash].js',
+  },
   module: {
     rules: [
       {
@@ -43,7 +47,10 @@ module.exports = merger(common, {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin({
+      filename: '[name].[hash].css',
+      allChunks: true,
+    }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',

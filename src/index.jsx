@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AOS from 'aos';
@@ -8,7 +8,7 @@ import './assets/images/favicon.png';
 import store from './store';
 import { Spinner } from './components/commons';
 
-const App = React.lazy(() => import('./containers/App'));
+const App = lazy(() => import('./containers/App'));
 
 AOS.init();
 // Using ReactDOM.render(...) when running on dev mode
