@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 import styles from './AboutMe.scss';
 import type { Props } from './type';
 import BasicInformation from './components/BasicInformation';
-import ProgressBars from '../../Commons/ProgressBars';
+import { ProgressBars } from '../../commons';
 
 const AboutMe = (props: Props) => {
   const {

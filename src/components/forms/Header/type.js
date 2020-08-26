@@ -1,4 +1,4 @@
-import type { Props as SocialNetworks } from '../../Commons/SocialNetworks/type';
+import type { Props as SocialNetworks } from '../../commons/SocialNetworks/type';
 
 export type Props = {
   socialNetworks: SocialNetworks,

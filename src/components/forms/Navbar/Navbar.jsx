@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Navbar.scss';
 import type { Props } from './type';
-import Brand from '../../Commons/Brand';
+import { Brand } from '../../commons';
 import NavbarMenu from './components/NavbarMenu';
 import HamburgerButton from './components/HamburgerButton';
 

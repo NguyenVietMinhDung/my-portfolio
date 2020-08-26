@@ -3,8 +3,7 @@ import React, { memo } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './Header.scss';
 import type { Props } from './type';
-import Button from '../../Commons/Button';
-import SocialNetworks from '../../Commons/SocialNetworks';
+import { Button, SocialNetworks } from '../../commons';
 
 const handleMouseMoveEvent = (event) => {
   const element = document.getElementById('dynamic-background');

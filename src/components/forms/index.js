@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import Experiences from './Experiences';
 import Educations from './Educations';
 import Projects from './Projects';
+import Achievements from './Achievements';
 
 export default {
   Navbar,
@@ -14,4 +15,5 @@ export default {
   Experiences,
   Educations,
   Projects,
+  Achievements,
 };
