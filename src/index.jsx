@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import './main.scss';
 import './assets/images/favicon.png';
 import store from './store';
-import { Spinner } from './components/commons';
+import { Spinner, ErrorBoundary } from './components/commons';
 
 const App = lazy(() => import('./containers/App'));
 
@@ -15,9 +15,11 @@ AOS.init();
 // Otherwise using ReactDOM.hydrate(...) for SSR
 ReactDOM.render(
   <Provider store={store}>
-    <Suspense fallback={<Spinner />}>
-      <App />
-    </Suspense>
+    <ErrorBoundary>
+      <Suspense fallback={<Spinner />}>
+        <App />
+      </Suspense>
+    </ErrorBoundary>
   </Provider>,
   document.getElementById('root'),
 );
